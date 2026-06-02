@@ -1,0 +1,145 @@
+<div class="feedback-page">
+
+     <div class="feedback-form-container">
+
+    <h2>
+      Share Your Experience
+    </h2>
+
+    <form
+      (ngSubmit)="submitFeedback()"
+      #feedbackForm="ngForm">
+
+      <div class="row">
+
+        <div class="col-md-6 mb-3">
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Full Name"
+            name="name"
+            [(ngModel)]="userFeedback.name"
+            required>
+
+        </div>
+
+        <div class="col-md-6 mb-3">
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Designation"
+            name="designation"
+            [(ngModel)]="userFeedback.designation">
+
+        </div>
+
+      </div>
+
+      <div class="mb-3">
+
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email Address"
+          name="email"
+          [(ngModel)]="userFeedback.email"
+          required>
+
+      </div>
+
+      <div class="mb-3">
+
+        <select
+          class="form-select"
+          name="rating"
+          [(ngModel)]="userFeedback.rating">
+
+          <option [value]="5">⭐⭐⭐⭐⭐ Excellent</option>
+          <option [value]="4">⭐⭐⭐⭐ Very Good</option>
+          <option [value]="3">⭐⭐⭐ Good</option>
+          <option [value]="2">⭐⭐ Fair</option>
+          <option [value]="1">⭐ Poor</option>
+
+        </select>
+
+      </div>
+
+      <div class="mb-3">
+
+        <textarea
+          rows="5"
+          class="form-control"
+          placeholder="Write your feedback..."
+          name="feedback"
+          [(ngModel)]="userFeedback.feedback"
+          required>
+        </textarea>
+
+      </div>
+
+      <button
+        class="btn btn-primary"
+        type="submit">
+
+        Submit Feedback
+
+      </button>
+
+    </form>
+
+  </div>
+
+  <div class="page-header">
+
+    <h1>Library Feedback</h1>
+
+    <p>
+      What our users say about the library
+    </p>
+
+  </div>
+
+  <!-- Existing Feedback -->
+
+  <div class="feedback-grid">
+
+    @for(item of feedbacks; track item.name){
+
+    <div class="feedback-card">
+
+      <div class="stars">
+
+        @for(star of [1,2,3,4,5]; track star){
+
+        <i
+          class="bi bi-star-fill"
+          [style.color]="star <= item.rating ? '#f59e0b' : '#d1d5db'">
+        </i>
+
+        }
+
+      </div>
+
+      <p>
+        {{item.feedback}}
+      </p>
+
+      <h5>{{item.name}}</h5>
+
+      <span>
+        {{item.designation}}
+      </span>
+
+    </div>
+
+    }
+
+  </div>
+
+  <!-- Feedback Form -->
+
+ 
+
+</div>

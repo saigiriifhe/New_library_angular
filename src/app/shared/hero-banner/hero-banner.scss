@@ -1,0 +1,63 @@
+.hero {
+
+  height: 500px;
+
+  background-image:url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da');
+
+  //  background-image: url('/assets/books/bgimage.png');
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.overlay {
+
+  height: 100%;
+
+  background: rgba(0,0,0,.55);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.search-box {
+  margin-top: 25px;
+}
+
+.search-box input {
+
+  width: 450px;
+  max-width: 90%;
+
+  padding: 12px;
+
+  border: none;
+
+}
+
+.search-box button {
+
+  padding: 12px 20px;
+
+  border: none;
+
+  background: #f59e0b;
+}

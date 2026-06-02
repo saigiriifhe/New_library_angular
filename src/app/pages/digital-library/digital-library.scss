@@ -1,0 +1,143 @@
+.digital-library-page {
+
+  padding: 60px 40px;
+
+  background:
+  linear-gradient(
+    to bottom,
+    #f8fafc,
+    #eef2ff
+  );
+
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page-header h1 {
+
+  font-size: 48px;
+
+  color: #1e3a8a;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.page-header p {
+
+  color: #64748b;
+
+  font-size: 18px;
+}
+
+.resource-grid {
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap: 35px;
+}
+
+.resource-card {
+
+  background: white;
+
+  border-radius: 25px;
+
+  padding: 40px 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  transition: .4s;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.08);
+}
+
+.resource-card:hover {
+
+  transform:
+  translateY(-12px);
+
+  box-shadow:
+  0 25px 40px rgba(0,0,0,.15);
+}
+
+.icon-box {
+
+  width: 90px;
+
+  height: 90px;
+
+  border-radius: 50%;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.icon-box i {
+
+  color: white;
+
+  font-size: 40px;
+}
+
+.resource-card h2 {
+
+  color: #0f172a;
+
+  font-size: 24px;
+
+  margin-bottom: 15px;
+
+  font-weight: 700;
+}
+
+.resource-card p {
+
+  color: #64748b;
+
+  line-height: 1.8;
+
+  min-height: 90px;
+}
+
+.resource-card button {
+
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-top: 15px;
+}
+
+.resource-card:hover button {
+
+  background: #1d4ed8;
+}

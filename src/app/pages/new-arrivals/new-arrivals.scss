@@ -1,0 +1,97 @@
+.new-arrivals-page {
+  padding: 50px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  color: #1e3a8a;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.books-grid {
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap: 30px;
+}
+
+.book-card {
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+  0 8px 20px rgba(0,0,0,.08);
+
+  transition: .3s;
+}
+
+.book-card:hover {
+
+  transform:
+  translateY(-8px);
+
+  box-shadow:
+  0 15px 30px rgba(0,0,0,.15);
+}
+
+.book-card img {
+
+  width: 100%;
+
+  height: 320px;
+
+  object-fit: cover;
+}
+
+.book-content {
+
+  padding: 20px;
+}
+
+.category {
+
+  background: #e0f2fe;
+
+  color: #0369a1;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.book-content h3 {
+
+  margin-top: 15px;
+
+  font-size: 20px;
+
+  color: #0f172a;
+}
+
+.book-content p {
+
+  color: #64748b;
+
+  margin: 10px 0;
+}
+
+.book-content small {
+
+  color: #94a3b8;
+}

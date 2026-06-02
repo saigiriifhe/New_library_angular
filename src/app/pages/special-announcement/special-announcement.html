@@ -1,0 +1,51 @@
+<div class="announcement-page">
+
+  <div class="page-header">
+
+    <h1>Special Announcements</h1>
+
+    <p>
+      Important Updates & Highlights
+    </p>
+
+  </div>
+
+  <div class="announcement-grid">
+
+    @for(item of announcements; track item.title){
+
+    <div class="announcement-card">
+
+      <div
+        class="icon-box"
+        [style.background]="item.color">
+
+        <i class="{{item.icon}}"></i>
+
+      </div>
+
+      <span class="date">
+
+        {{item.date}}
+
+      </span>
+
+      <h3>
+
+        {{item.title}}
+
+      </h3>
+
+      <p>
+
+        {{item.description}}
+
+      </p>
+
+    </div>
+
+    }
+
+  </div>
+
+</div>

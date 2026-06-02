@@ -1,0 +1,157 @@
+.timings-page {
+
+  min-height: 100vh;
+
+  padding: 50px 20px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #e0f2fe,
+    #f8fafc
+  );
+}
+
+.header-section {
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.header-section h1 {
+
+  font-size: 48px;
+
+  color: #1e3a8a;
+
+  font-weight: 700;
+}
+
+.header-section p {
+
+  color: #64748b;
+
+  font-size: 18px;
+}
+
+.timings-container {
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap: 30px;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.timing-card {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.08);
+
+  transition: .3s;
+}
+
+.timing-card:hover {
+
+  transform:
+  translateY(-8px);
+}
+
+.card-icon {
+
+  width: 80px;
+
+  height: 80px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.card-icon i {
+
+  color: white;
+
+  font-size: 35px;
+}
+
+.working-hours .card-icon {
+  background: #2563eb;
+}
+
+.circulation .card-icon {
+  background: #16a34a;
+}
+
+.reading-room .card-icon {
+  background: #f59e0b;
+}
+
+.timing-card h2 {
+
+  margin-bottom: 20px;
+
+  color: #0f172a;
+}
+
+.timing-card ul {
+
+  list-style: none;
+
+  padding: 0;
+}
+
+.timing-card li {
+
+  margin-bottom: 12px;
+
+  color: #475569;
+}
+
+.notice-card {
+
+  max-width: 900px;
+
+  margin: 40px auto 0;
+
+  background: #dc2626;
+
+  color: white;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+.notice-card i {
+
+  margin-right: 10px;
+}

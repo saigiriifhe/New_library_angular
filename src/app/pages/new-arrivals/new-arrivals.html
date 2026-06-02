@@ -1,0 +1,49 @@
+<div class="new-arrivals-page">
+
+  <div class="page-header">
+
+    <h1>New Arrivals</h1>
+
+    <p>
+      Latest Books Added to the Library Collection
+    </p>
+
+  </div>
+
+  <div class="books-grid">
+
+    @for(book of books; track book.title){
+
+    <div class="book-card">
+
+      <img
+        [src]="book.image"
+        [alt]="book.title">
+
+      <div class="book-content">
+
+        <span class="category">
+          {{book.category}}
+        </span>
+
+        <h3>
+          {{book.title}}
+        </h3>
+
+        <p>
+          {{book.author}}
+        </p>
+
+        <small>
+          Added in {{book.year}}
+        </small>
+
+      </div>
+
+    </div>
+
+    }
+
+  </div>
+
+</div>

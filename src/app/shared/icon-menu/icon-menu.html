@@ -1,0 +1,81 @@
+
+
+
+<!-- <div class="top-menu">
+
+  @for(menu of menus; track menu.title){
+
+  <div class="menu-item">
+
+    <div
+      class="icon-box"
+      [style.background]="menu.color">
+
+      <i class="bi" [ngClass]="menu.icon"></i>
+
+    </div>
+
+    <span>
+      {{menu.title}}
+    </span>
+
+  </div>
+
+  }
+
+</div> -->
+
+
+<!-- <div class="icon-menu-container">
+
+  @for(menu of menus; track menu.title){
+
+    <div
+      class="menu-card"
+      (click)="openMenu(menu)">
+
+      <div
+        class="icon-circle"
+        [style.background]="menu.color">
+
+        <i class="{{menu.icon}}"></i>
+
+      </div>
+
+      <span>
+
+        {{menu.title}}
+
+      </span>
+
+    </div>
+
+  }
+
+</div> -->
+
+<div class="icon-menu-container">
+
+  @for(menu of menus; track menu.title){
+
+    <div
+      class="menu-card"
+      (click)="openMenu(menu)">
+
+      <div
+        class="icon-circle"
+        [style.background]="menu.color">
+
+        <i class="{{menu.icon}}"></i>
+
+      </div>
+
+      <span>
+        {{menu.title}}
+      </span>
+
+    </div>
+
+  }
+
+</div>

@@ -1,0 +1,47 @@
+<div class="notices-page">
+
+  <div class="page-header">
+
+    <h1>Library Notices</h1>
+
+    <p>
+      Latest Announcements & Notifications
+    </p>
+
+  </div>
+
+  <div class="notice-list">
+
+    @for(notice of notices; track notice.title){
+
+    <div class="notice-card">
+
+      <div class="notice-top">
+
+        <span class="category">
+          {{notice.category}}
+        </span>
+
+        <span class="date">
+          {{notice.date}}
+        </span>
+
+      </div>
+
+      <h3>
+        {{notice.title}}
+      </h3>
+
+      <p>
+        {{notice.description}}
+      </p>
+
+      
+
+    </div>
+
+    }
+
+  </div>
+
+</div>
