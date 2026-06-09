@@ -1,29 +1,169 @@
+// .rules-page {
+
+//   min-height: 100vh;
+
+//   background:
+//   linear-gradient(
+//     to bottom,
+//     #f8fafc,
+//     #eef2ff
+//   );
+// }
+
+// .hero-section {
+
+//   background:
+//   linear-gradient(
+//     135deg,
+//     #1e3a8a,
+//     #2563eb
+//   );
+
+//   color: white;
+
+//   text-align: center;
+
+//   padding: 70px 20px;
+// }
+
+// .hero-section h1 {
+
+//   font-size: 48px;
+
+//   font-weight: 700;
+// }
+
+// .hero-section p {
+
+//   font-size: 18px;
+
+//   margin-top: 10px;
+// }
+
+// .rules-container {
+
+//   max-width: 1300px;
+
+//   margin: auto;
+
+//   padding: 50px 20px;
+
+//   display: grid;
+
+//   grid-template-columns:
+//   repeat(auto-fit,minmax(350px,1fr));
+
+//   gap: 25px;
+// }
+
+// .rule-card {
+
+//   background: white;
+
+//   padding: 30px;
+
+//   border-radius: 20px;
+
+//   box-shadow:
+//   0 8px 20px rgba(0,0,0,.08);
+
+//   transition: .3s;
+// }
+
+// .rule-card:hover {
+
+//   transform:
+//   translateY(-6px);
+// }
+
+// .rule-card h2 {
+
+//   color: #1e3a8a;
+
+//   margin-bottom: 20px;
+
+//   font-size: 22px;
+
+//   display: flex;
+
+//   align-items: center;
+
+//   gap: 10px;
+// }
+
+// .rule-card ul {
+
+//   padding-left: 20px;
+// }
+
+// .rule-card li {
+
+//   margin-bottom: 12px;
+
+//   line-height: 1.7;
+
+//   color: #475569;
+// }
+
+// .important-note {
+
+//   max-width: 1000px;
+
+//   margin: 0 auto 50px;
+
+//   background: #dc2626;
+
+//   color: white;
+
+//   padding: 20px;
+
+//   border-radius: 15px;
+
+//   text-align: center;
+
+//   font-weight: 600;
+// }
+
+// .important-note i {
+
+//   margin-right: 10px;
+// }
+
 .rules-page {
 
   min-height: 100vh;
 
   background:
-  linear-gradient(
-    to bottom,
-    #f8fafc,
-    #eef2ff
-  );
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #eef2ff 100%
+    );
+
+  padding-bottom: 50px;
 }
+
+/* ===========================
+   HERO SECTION
+=========================== */
 
 .hero-section {
 
   background:
-  linear-gradient(
-    135deg,
-    #1e3a8a,
-    #2563eb
-  );
+    linear-gradient(
+      135deg,
+      #1e3a8a,
+      #2563eb
+    );
 
   color: white;
 
   text-align: center;
 
   padding: 70px 20px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
 }
 
 .hero-section h1 {
@@ -31,100 +171,265 @@
   font-size: 48px;
 
   font-weight: 700;
+
+  margin-bottom: 10px;
 }
 
 .hero-section p {
 
   font-size: 18px;
 
-  margin-top: 10px;
+  opacity: .95;
 }
+
+/* ===========================
+   CONTAINER
+=========================== */
 
 .rules-container {
 
-  max-width: 1300px;
+  max-width: 1200px;
 
-  margin: auto;
+  margin: 0 auto;
 
-  padding: 50px 20px;
+  padding: 40px 20px;
 
-  display: grid;
+  display: flex;
 
-  grid-template-columns:
-  repeat(auto-fit,minmax(350px,1fr));
+  flex-direction: column;
 
-  gap: 25px;
+  gap: 30px;
 }
+
+/* ===========================
+   RULE CARD
+=========================== */
 
 .rule-card {
 
-  background: white;
-
-  padding: 30px;
+  background: #ffffff;
 
   border-radius: 20px;
 
-  box-shadow:
-  0 8px 20px rgba(0,0,0,.08);
+  padding: 35px;
 
-  transition: .3s;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+  border-top: 5px solid #2563eb;
+
+  transition: all .3s ease;
 }
 
 .rule-card:hover {
 
-  transform:
-  translateY(-6px);
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(37,99,235,.15);
 }
+
+/* ===========================
+   CARD TITLE
+=========================== */
 
 .rule-card h2 {
 
   color: #1e3a8a;
 
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
-  font-size: 22px;
+  font-size: 28px;
+
+  font-weight: 700;
 
   display: flex;
 
   align-items: center;
 
-  gap: 10px;
+  gap: 12px;
 }
 
-.rule-card ul {
+.rule-card h2 i {
 
-  padding-left: 20px;
+  color: #2563eb;
 }
 
-.rule-card li {
+/* ===========================
+   SECTION HEADINGS
+=========================== */
 
-  margin-bottom: 12px;
+.circulation-section h3 {
 
-  line-height: 1.7;
+  margin-top: 35px;
 
-  color: #475569;
-}
+  margin-bottom: 15px;
 
-.important-note {
+  padding-left: 15px;
 
-  max-width: 1000px;
+  border-left: 5px solid #2563eb;
 
-  margin: 0 auto 50px;
+  color: #1e3a8a;
 
-  background: #dc2626;
-
-  color: white;
-
-  padding: 20px;
-
-  border-radius: 15px;
-
-  text-align: center;
+  font-size: 24px;
 
   font-weight: 600;
 }
 
+/* ===========================
+   LISTS
+=========================== */
+
+.rule-card ol,
+.rule-card ul {
+
+  padding-left: 30px;
+}
+
+.rule-card li {
+
+  margin-bottom: 14px;
+
+  line-height: 1.9;
+
+  color: #334155;
+
+  font-size: 16px;
+}
+
+/* ===========================
+   IMPORTANT NOTE
+=========================== */
+
+.important-note {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  background:
+    linear-gradient(
+      135deg,
+      #dc2626,
+      #ef4444
+    );
+
+  color: white;
+
+  padding: 20px 25px;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 20px rgba(220,38,38,.25);
+}
+
 .important-note i {
 
-  margin-right: 10px;
+  font-size: 22px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+  .hero-section h1 {
+
+    font-size: 38px;
+  }
+
+  .rule-card h2 {
+
+    font-size: 24px;
+  }
+
+  .circulation-section h3 {
+
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+
+    padding: 50px 20px;
+  }
+
+  .hero-section h1 {
+
+    font-size: 30px;
+  }
+
+  .hero-section p {
+
+    font-size: 16px;
+  }
+
+  .rules-container {
+
+    padding: 25px 15px;
+  }
+
+  .rule-card {
+
+    padding: 25px;
+  }
+
+  .rule-card h2 {
+
+    font-size: 22px;
+  }
+
+  .circulation-section h3 {
+
+    font-size: 18px;
+  }
+
+  .rule-card li {
+
+    font-size: 15px;
+
+    line-height: 1.8;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .hero-section h1 {
+
+    font-size: 26px;
+  }
+
+  .rule-card h2 {
+
+    font-size: 20px;
+  }
+
+  .circulation-section h3 {
+
+    font-size: 17px;
+  }
+
+  .important-note {
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
 }

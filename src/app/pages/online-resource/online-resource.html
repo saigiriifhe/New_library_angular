@@ -1,61 +1,47 @@
-<div class="resource-page">
+<div class="resource-grid">
 
-  <div class="page-header">
+  @for(item of resources; track item.title){
 
-    <h1>Online Resources</h1>
+  <div class="resource-card">
+
+    <div
+      class="icon-box"
+      [style.background]="item.color">
+
+      <i class="{{item.icon}}"></i>
+
+    </div>
+
+    <h2>
+      {{item.title}}
+    </h2>
 
     <p>
-      Explore Digital Learning and Research Resources
+      {{item.description}}
     </p>
 
-  </div>
+   @if(item.count){
 
-  <div class="resource-grid">
+<div class="resource-count">
+  {{item.count}}
+</div>
 
-    @for(item of resources; track item.title){
+}
 
-    <div class="resource-card">
-
-      <div
-        class="icon-box"
-        [style.background]="item.color">
-
-        <i class="{{item.icon}}"></i>
-
-      </div>
-
-      <h2>
-        {{item.title}}
-      </h2>
-
-      <p>
-        {{item.description}}
-      </p>
-
-      @if(item.route){
+    @if(item.route){
 
       <a
         [routerLink]="item.route"
         class="resource-btn">
 
-        Open Resource
+        View Databases
 
       </a>
-
-      } @else {
-
-      <button class="resource-btn">
-
-        Coming Soon
-
-      </button>
-
-      }
-
-    </div>
 
     }
 
   </div>
+
+  }
 
 </div>

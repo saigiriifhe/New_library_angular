@@ -1,42 +1,267 @@
 <div class="database-page">
 
-  <div class="page-title">
+  <div class="page-header">
 
     <h1>Online Databases</h1>
 
     <p>
-      Access premium academic, research and business databases
+      Access Academic, Research and Professional Databases
     </p>
 
   </div>
 
-  <div class="database-grid">
+  <!-- =======================================
+       FACULTY OF MANAGEMENT
+  ======================================== -->
 
-    @for(db of databases; track db.title){
+  <section class="faculty-section">
 
-    <a
-      [href]="db.link"
-      target="_blank"
-      class="database-card">
+    <h2 class="faculty-title">
+      Faculty of Management
+    </h2>
 
-      <div
-        class="icon"
-        [style.background]="db.color">
+    <!-- Journal Databases -->
 
-        <i class="{{db.icon}}"></i>
+    <div class="category-block">
+
+      <h3>
+        Journal Databases
+      </h3>
+
+      <div class="database-grid">
+
+        @for(db of journalDatabases; track db.name){
+
+        <div class="database-card">
+
+          <a
+            [href]="db.officialUrl"
+            target="_blank"
+            class="database-title">
+
+            {{db.name}}
+
+          </a>
+
+          <p class="database-description">
+
+            {{db.description}}
+
+          </p>
+
+        </div>
+
+        }
 
       </div>
 
-      <h3>{{db.title}}</h3>
+    </div>
 
-      <span>
-        Open Database
-      </span>
+    <!-- Industrial / Company Information Databases -->
 
-    </a>
+    <div class="category-block">
 
-    }
+      <h3>
+        Industrial / Company Information Databases
+      </h3>
 
-  </div>
+      <div class="database-grid">
+
+        @for(db of companyDatabases; track db.name){
+
+        <div class="database-card">
+
+          <a
+            [href]="db.officialUrl"
+            target="_blank"
+            class="database-title">
+
+            {{db.name}}
+
+          </a>
+
+          <p class="database-description">
+
+            {{db.description}}
+
+          </p>
+
+        </div>
+
+        }
+
+      </div>
+
+    </div>
+
+    <!-- E-Books -->
+
+    <div class="category-block">
+
+      <h3>
+        E-Books
+      </h3>
+
+      <div class="database-grid">
+
+        @for(db of eBooks; track db.name){
+
+        <div class="database-card">
+
+          <a
+            [href]="db.officialUrl"
+            target="_blank"
+            class="database-title">
+
+            {{db.name}}
+
+          </a>
+
+          <p class="database-description">
+
+            {{db.description}}
+
+          </p>
+
+        </div>
+
+        }
+
+      </div>
+
+    </div>
+
+    <!-- Research Related Databases -->
+
+    <div class="category-block">
+
+      <h3>
+        Research Related Databases
+      </h3>
+
+      <div class="database-grid">
+
+        @for(db of researchDatabases; track db.name){
+
+        <div class="database-card">
+
+          <a
+            [href]="db.officialUrl"
+            target="_blank"
+            class="database-title">
+
+            {{db.name}}
+
+          </a>
+
+          <p class="database-description">
+
+            {{db.description}}
+
+          </p>
+
+        </div>
+
+        }
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =======================================
+       FACULTY OF SCIENCE & TECHNOLOGY
+  ======================================== -->
+
+  <section class="faculty-section">
+
+    <h2 class="faculty-title">
+      Faculty of Science & Technology
+    </h2>
+
+    <div class="category-block">
+
+      <h3>
+        Engineering Databases
+      </h3>
+
+      <div class="database-grid">
+
+        @for(db of engineeringDatabases; track db.name){
+
+        <div class="database-card">
+
+          <a
+            [href]="db.officialUrl"
+            target="_blank"
+            class="database-title">
+
+            {{db.name}}
+
+          </a>
+
+          <p class="database-description">
+
+            {{db.description}}
+
+          </p>
+
+        </div>
+
+        }
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =======================================
+       FACULTY OF LAW
+  ======================================== -->
+
+  <section class="faculty-section">
+
+    <h2 class="faculty-title">
+      Faculty of Law
+    </h2>
+
+    <div class="category-block">
+
+      <h3>
+        Legal Databases
+      </h3>
+
+      <div class="database-grid">
+
+        @for(db of lawDatabases; track db.name){
+
+        <div class="database-card">
+
+          <a
+            [href]="db.officialUrl"
+            target="_blank"
+            class="database-title">
+
+            {{db.name}}
+
+          </a>
+
+          <p class="database-description">
+
+            {{db.description}}
+
+          </p>
+
+        </div>
+
+        }
+
+      </div>
+
+    </div>
+
+  </section>
 
 </div>

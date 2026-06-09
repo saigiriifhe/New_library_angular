@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { count } from 'console';
 
 @Component({
   selector: 'app-online-resource',
@@ -21,7 +22,7 @@ export class OnlineResource {
       icon: 'bi bi-journal-richtext',
       color: '#2563eb',
       description: 'Access scholarly journals and research publications.',
-      route: ''
+      count: '123'
     },
 
     {
@@ -29,7 +30,7 @@ export class OnlineResource {
       icon: 'bi bi-book-fill',
       color: '#16a34a',
       description: 'Digital books for learning, teaching and research.',
-      route: ''
+      count: '123'
     },
 
     {
@@ -37,16 +38,9 @@ export class OnlineResource {
       icon: 'bi bi-newspaper',
       color: '#dc2626',
       description: 'Online magazines and periodicals.',
-      route: ''
+      count: '123'
     },
 
-    {
-      title: 'Higher Education News Clippings',
-      icon: 'bi bi-megaphone-fill',
-      color: '#7c3aed',
-      description: 'Latest educational and academic news updates.',
-      route: ''
-    },
 
     {
       title: 'Online Databases',

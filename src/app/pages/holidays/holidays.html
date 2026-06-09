@@ -10,52 +10,55 @@
 
   </div>
 
+  <!-- HOLIDAY LIST -->
+
   <div class="holiday-card">
 
     <h2>Official Holiday List</h2>
 
-    <table class="holiday-table">
+    <div class="table-responsive">
 
-      <thead>
+      <table class="holiday-table">
 
-        <tr>
-          <th>S.No</th>
-          <th>Date</th>
-          <th>Day</th>
-          <th>Holiday</th>
-        </tr>
+        <thead>
 
-      </thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Holiday</th>
+          </tr>
 
-      <tbody>
+        </thead>
 
-        @for(item of holidays; track item.holiday; let i = $index){
+        <tbody>
 
-        <tr>
+          @for(item of holidays; track item.holiday; let i = $index){
 
-          <td>{{i + 1}}</td>
+          <tr>
 
-          <td>{{item.date}}</td>
+            <td>{{ i + 1 }}</td>
+            <td>{{ item.date }}</td>
+            <td>{{ item.day }}</td>
+            <td>{{ item.holiday }}</td>
 
-          <td>{{item.day}}</td>
+          </tr>
 
-          <td>{{item.holiday}}</td>
+          }
 
-        </tr>
+        </tbody>
 
-        }
+      </table>
 
-      </tbody>
-
-    </table>
+    </div>
 
   </div>
 
+  <!-- IMPORTANT NOTE -->
+
   <div class="note-card">
 
-    <h2>
-      Important Note
-    </h2>
+    <h2>Important Note</h2>
 
     <p>
       Bakrid (27-05-2026) will be observed as a sectional holiday.
@@ -67,40 +70,44 @@
 
   </div>
 
+  <!-- WORKING SATURDAYS -->
+
   <div class="working-card">
 
-    <h2>
-      Working Saturdays
-    </h2>
+    <h2>Working Saturdays</h2>
 
-    <table class="holiday-table">
+    <div class="table-responsive">
 
-      <thead>
+      <table class="holiday-table">
 
-        <tr>
-          <th>Date</th>
-          <th>Remarks</th>
-        </tr>
+        <thead>
 
-      </thead>
+          <tr>
+            <th>Date</th>
+            <th>Remarks</th>
+          </tr>
 
-      <tbody>
+        </thead>
 
-        @for(day of workingDays; track day.date){
+        <tbody>
 
-        <tr>
+          @for(day of workingDays; track day.date){
 
-          <td>{{day.date}}</td>
+          <tr>
 
-          <td>{{day.remarks}}</td>
+            <td>{{ day.date }}</td>
 
-        </tr>
+            <td>{{ day.remarks }}</td>
 
-        }
+          </tr>
 
-      </tbody>
+          }
 
-    </table>
+        </tbody>
+
+      </table>
+
+    </div>
 
   </div>
 

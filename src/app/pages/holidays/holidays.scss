@@ -5,7 +5,13 @@
   background: #f8fafc;
 
   min-height: 100vh;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
 }
+
+/* HEADER */
 
 .page-header {
 
@@ -21,6 +27,8 @@
   font-size: 42px;
 
   font-weight: 700;
+
+  margin-bottom: 10px;
 }
 
 .page-header p {
@@ -30,20 +38,22 @@
   font-size: 18px;
 }
 
+/* CARDS */
+
 .holiday-card,
 .note-card,
 .working-card {
 
-  background: white;
+  background: #ffffff;
 
   padding: 25px;
 
-  border-radius: 16px;
+  border-radius: 18px;
 
   margin-bottom: 25px;
 
   box-shadow:
-  0 5px 15px rgba(0,0,0,.08);
+    0 5px 15px rgba(0,0,0,.08);
 }
 
 .holiday-card h2,
@@ -52,38 +62,77 @@
 
   color: #1e3a8a;
 
+  font-size: 24px;
+
+  font-weight: 700;
+
   margin-bottom: 20px;
 }
+
+/* TABLE WRAPPER */
+
+.table-responsive {
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/* TABLE */
 
 .holiday-table {
 
   width: 100%;
 
+  min-width: 700px;
+
   border-collapse: collapse;
+}
+
+.holiday-table thead tr {
+
+  background: #1e3a8a;
 }
 
 .holiday-table th {
 
-  background: #1e3a8a;
-
   color: white;
 
-  padding: 12px;
+  padding: 14px;
 
   text-align: left;
+
+  font-size: 15px;
+
+  font-weight: 600;
 }
 
 .holiday-table td {
 
-  padding: 12px;
+  padding: 12px 14px;
 
   border-bottom: 1px solid #e2e8f0;
+
+  color: #334155;
+
+  font-size: 14px;
 }
 
-.holiday-table tr:hover {
+.holiday-table tbody tr:nth-child(even) {
 
-  background: #f1f5f9;
+  background: #f8fafc;
 }
+
+.holiday-table tbody tr:hover {
+
+  background: #eff6ff;
+
+  transition: .2s ease;
+}
+
+/* NOTE CARD */
 
 .note-card {
 
@@ -92,7 +141,103 @@
 
 .note-card p {
 
-  margin-bottom: 10px;
-
   color: #475569;
+
+  line-height: 1.8;
+
+  margin-bottom: 10px;
+}
+
+/* SCROLLBAR */
+
+.table-responsive::-webkit-scrollbar {
+
+  height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+
+  background: #2563eb;
+
+  border-radius: 20px;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+  .page-header h1 {
+
+    font-size: 34px;
+  }
+
+  .holiday-table {
+
+    min-width: 650px;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .holiday-page {
+
+    padding: 15px;
+  }
+
+  .holiday-card,
+  .working-card,
+  .note-card {
+
+    padding: 15px;
+  }
+
+  .page-header h1 {
+
+    font-size: 28px;
+  }
+
+  .page-header p {
+
+    font-size: 16px;
+  }
+
+  .holiday-card h2,
+  .working-card h2,
+  .note-card h2 {
+
+    font-size: 20px;
+  }
+
+  .holiday-table {
+
+    min-width: 600px;
+  }
+
+  .holiday-table th,
+  .holiday-table td {
+
+    font-size: 13px;
+
+    padding: 10px;
+  }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  .page-header h1 {
+
+    font-size: 24px;
+  }
+
+  .holiday-table {
+
+    min-width: 550px;
+  }
+
 }

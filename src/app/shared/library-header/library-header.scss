@@ -1,63 +1,20 @@
-.top-menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-}
 
-.menu-item {
-  width: 77px;
-  height: 85px;
-
-  border-right: 1px solid #e5e7eb;
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-.menu-item:hover {
-  background: #f8fafc;
-}
-
-.icon-box {
-  width: 42px;
-  height: 42px;
-
-  border-radius: 10px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 6px;
-}
-
-.icon-box i {
-  color: white;
-  font-size: 20px;
-}
-
-.menu-item span {
-  font-size: 11px;
-  text-align: center;
-  font-weight: 600;
-  color: #222;
-  line-height: 14px;
-}
 
 .library-header {
 
-  background: white;
+  width: 100%;
 
-  padding: 15px 25px;
+  background: #ffffff;
+
+  border-bottom: 2px solid #e5e7eb;
+
+  padding: 15px 15px;
+  
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header-content {
 
   display: flex;
 
@@ -65,82 +22,110 @@
 
   align-items: center;
 
-  border-bottom: 1px solid #ececec;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  margin-top: 20px;
 }
 
-.left-section {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.library-info {
+
+  flex: 1;
+}
+
+.library-info h2 {
+
+  margin: 0;
+
+  color: #39eaf7;
+
+  font-size: 34px;
+
+  font-weight: 700;
+
+  margin-left: -40px;
+
+  margin-top: 20px;
+
+  letter-spacing: 0px;
+}
+
+.library-info p {
+
+  margin-top: 8px;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  font-weight: 500;
+  margin-left: -40px;
+
+  
 }
 
 .logo {
-  width: 65px;
-  height: 65px;
+
+  width: 250px;
+
+  margin-top: -60px;
+
+  height: auto;
+
+  object-fit: contain;
 }
 
-.left-section h2 {
-  margin: 0;
-  font-size: 30px;
-  color: #1d2b7f;
-  font-weight: 700;
-}
+/* Tablet */
 
-.left-section p {
-  margin: 0;
-  color: #666;
-}
+@media (max-width: 768px) {
 
-.right-section {
-  display: flex;
-  gap: 40px;
-}
+  .library-header {
 
-.info-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.info-box i {
-  width: 42px;
-  height: 42px;
-
-  border-radius: 50%;
-
-  background: #1976d2;
-
-  color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.info-box h6 {
-  margin: 0;
-  font-weight: 700;
-}
-
-.info-box p {
-  margin: 0;
-  font-size: 13px;
-}
-
-@media(max-width:992px){
-
-  .library-header{
-    flex-direction: column;
-    gap:20px;
+    padding: 15px;
   }
 
-  .right-section{
-    flex-direction: column;
-    gap:15px;
+  .library-info h2 {
+
+    font-size: 24px;
   }
 
-  .left-section h2{
-    font-size:22px;
+  .library-info p {
+
+    font-size: 14px;
   }
 
+  .logo {
+
+    width: 80px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+  .header-content {
+
+    flex-direction: column-reverse;
+
+    text-align: center;
+
+    gap: 15px;
+  }
+
+  .library-info h2 {
+
+    font-size: 20px;
+  }
+
+  .library-info p {
+
+    font-size: 13px;
+  }
+
+  .logo {
+
+    width: 70px;
+  }
 }

@@ -88,6 +88,12 @@ path :'special-announcement',
 component:SpecialAnnouncement
 },
 {
+path:'opac',
+component:Opac
+},
+
+
+{
     path: '**',
     redirectTo: ''
 }

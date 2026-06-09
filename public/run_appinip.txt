@@ -1,0 +1,24 @@
+Open Command Prompt:
+
+ipconfig
+
+step 2
+Look for:
+
+IPv4 Address . . . . . . . . . . : 192.168.1.100
+
+172.16.6.109
+
+step 3
+
+Run:
+
+ng serve --host 0.0.0.0
+
+or
+
+ng serve --host 0.0.0.0 --port 4200
+
+ng serve --host 172.16.6.109 --port 4200
+
+

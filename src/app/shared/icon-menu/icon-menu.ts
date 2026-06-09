@@ -122,19 +122,23 @@ import { Router } from '@angular/router';
 })
 export class IconMenuComponent {
 
+  showOpacOptions = false;
+
   constructor(
     private router: Router
   ) {}
 
   menus = [
 
-    { title:'About Library', icon:'bi-bank', color:'#4A7BD0', route:'/about-library' },
+    { title:'About Library', image: 'assets/books/bgimage.jpg', route:'/about-library' },
 
     { title:'Rules & Regulations', icon:'bi-journal-bookmark-fill', color:'#F15A3D', route:'/rules-regulations' },
 
-    { title:'Physical Resource', icon:'bi-stack', color:'#1F9D55', route:'/physical-resource' },
+    { title:'Library Timings', icon:'bi-clock', color:'#5B9AA0', route:'/library-timings' },
 
-    { title:'Online Resource', icon:'bi-globe', color:'#F5A623', route:'/online-resource' },
+    { title:'Physical Resources', icon:'bi-stack', color:'#1F9D55', route:'/physical-resource' },
+
+    { title:'Online Resources', icon:'bi-globe', color:'#F5A623', route:'/online-resource' },
 
     { title:'Digital Library', icon:'bi-pc-display', color:'#7E57C2', route:'/digital-library' },
 
@@ -142,34 +146,30 @@ export class IconMenuComponent {
 
     { title:'New Arrivals', icon:'bi-book', color:'#E84A5F', route:'/new-arrivals' },
 
-    { title:'OPAC', icon:'bi-search', color:'#F57C00' },
+    { title:'Library OPAC', icon:'bi-search', color:'#F57C00',route:'/opac'},
 
     { title:'Library Notices', icon:'bi-bell', color:'#1976D2', route:'/library-notices' },
 
-    { title:'IFHE Holidays List', icon:'bi-calendar-event', color:'#2E8B57', route:'/holidays' },
-
-    { title:'Special Announcement', icon:'bi-megaphone', color:'#7E57C2', route:'/special-announcement' },
-
-    { title:'Library Timings', icon:'bi-clock', color:'#5B9AA0', route:'/library-timings' },
+    { title:'IFHE Holidays List', icon:'bi-calendar-event', color:'#2E8B57', route:'/ifhe-holidays-list' },
 
     { title:'Feedback', icon:'bi-chat-dots', color:'#E15B64', route:'/feedback' }
 
   ];
 
+
   openMenu(menu: any) {
 
-    if(menu.title === 'OPAC'){
+  this.router.navigate([menu.route]);
 
-      window.open(
-        'http://111.93.16.209/libksr/queries/q_string.aspx',
-        '_blank'
-      );
+}
 
-      return;
-    }
 
-    this.router.navigate([menu.route]);
 
-  }
+
+closeOpacPopup() {
+
+  this.showOpacOptions = false;
+
+}
 
 }
