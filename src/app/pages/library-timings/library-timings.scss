@@ -5,12 +5,14 @@
   padding: 50px 20px;
 
   background:
-  linear-gradient(
-    135deg,
-    #e0f2fe,
-    #f8fafc
-  );
+    linear-gradient(
+      to bottom,
+      #f8fafc,
+      #eef2ff
+    );
 }
+
+/* HEADER */
 
 .header-section {
 
@@ -23,9 +25,11 @@
 
   font-size: 48px;
 
+  font-weight: 700;
+
   color: #1e3a8a;
 
-  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .header-section p {
@@ -35,40 +39,48 @@
   font-size: 18px;
 }
 
+/* CARDS GRID */
+
 .timings-container {
+
+  max-width: 1300px;
+
+  margin: auto;
 
   display: grid;
 
   grid-template-columns:
-  repeat(auto-fit,minmax(320px,1fr));
+    repeat(auto-fit, minmax(320px, 1fr));
 
-  gap: 30px;
+  gap: 25px;
 
-  max-width: 1200px;
-
-  margin: auto;
+  margin-bottom: 40px;
 }
+
+/* TIMING CARD */
 
 .timing-card {
 
   background: white;
 
-  padding: 30px;
-
   border-radius: 20px;
+
+  padding: 30px;
 
   text-align: center;
 
   box-shadow:
-  0 10px 25px rgba(0,0,0,.08);
+    0 8px 20px rgba(0,0,0,.08);
 
-  transition: .3s;
+  transition: .3s ease;
 }
 
 .timing-card:hover {
 
-  transform:
-  translateY(-8px);
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
 }
 
 .card-icon {
@@ -77,43 +89,48 @@
 
   height: 80px;
 
-  margin: auto;
-
   border-radius: 50%;
+
+  margin: auto;
 
   display: flex;
 
-  justify-content: center;
-
   align-items: center;
 
+  justify-content: center;
+
   margin-bottom: 20px;
+}
+
+.working-hours .card-icon {
+
+  background: #2563eb;
+}
+
+.circulation .card-icon {
+
+  background: #059669;
+}
+
+.reading-room .card-icon {
+
+  background: #ea580c;
 }
 
 .card-icon i {
 
   color: white;
 
-  font-size: 35px;
-}
-
-.working-hours .card-icon {
-  background: #2563eb;
-}
-
-.circulation .card-icon {
-  background: #16a34a;
-}
-
-.reading-room .card-icon {
-  background: #f59e0b;
+  font-size: 34px;
 }
 
 .timing-card h2 {
 
-  margin-bottom: 20px;
+  color: #1e3a8a;
 
-  color: #0f172a;
+  font-size: 24px;
+
+  margin-bottom: 20px;
 }
 
 .timing-card ul {
@@ -121,37 +138,154 @@
   list-style: none;
 
   padding: 0;
+
+  margin: 0;
 }
 
 .timing-card li {
 
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 
   color: #475569;
+
+  line-height: 1.8;
+
+  font-size: 16px;
 }
+
+/* NOTICE CARD */
 
 .notice-card {
 
-  max-width: 900px;
+  max-width: 1300px;
 
-  margin: 40px auto 0;
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+}
+
+.holiday-notice {
 
   background: #dc2626;
 
   color: white;
-
-  padding: 20px;
-
-  border-radius: 15px;
-
-  text-align: center;
-
-  font-size: 18px;
-
-  font-weight: 600;
 }
 
-.notice-card i {
+.notice-icon i {
 
-  margin-right: 10px;
+  font-size: 50px;
+
+  color: white;
+}
+
+.notice-content h3 {
+
+  margin: 0 0 10px;
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+.notice-content p {
+
+  margin: 0;
+
+  line-height: 1.8;
+
+  font-size: 16px;
+}
+
+.notice-content strong {
+
+  color: #fef3c7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+  .header-section h1 {
+
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .timings-page {
+
+    padding: 30px 15px;
+  }
+
+  .header-section h1 {
+
+    font-size: 32px;
+  }
+
+  .header-section p {
+
+    font-size: 16px;
+  }
+
+  .timings-container {
+
+    grid-template-columns: 1fr;
+  }
+
+  .notice-card {
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .notice-icon i {
+
+    font-size: 40px;
+  }
+
+  .notice-content h3 {
+
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .header-section h1 {
+
+    font-size: 28px;
+  }
+
+  .timing-card {
+
+    padding: 20px;
+  }
+
+  .card-icon {
+
+    width: 70px;
+
+    height: 70px;
+  }
+
+  .card-icon i {
+
+    font-size: 28px;
+  }
+
 }

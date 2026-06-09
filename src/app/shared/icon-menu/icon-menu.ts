@@ -130,7 +130,7 @@ export class IconMenuComponent {
 
   menus = [
 
-    { title:'About Library', image: 'assets/books/bgimage.jpg', route:'/about-library' },
+    { title:'About Library', image: 'assets/books/bgimage.png', route:'/about-library' },
 
     { title:'Rules & Regulations', icon:'bi-journal-bookmark-fill', color:'#F15A3D', route:'/rules-regulations' },
 

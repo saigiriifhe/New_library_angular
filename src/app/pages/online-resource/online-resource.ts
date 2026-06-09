@@ -22,7 +22,7 @@ export class OnlineResource {
       icon: 'bi bi-journal-richtext',
       color: '#2563eb',
       description: 'Access scholarly journals and research publications.',
-      count: '123'
+      count: '29,701'
     },
 
     {
@@ -30,16 +30,10 @@ export class OnlineResource {
       icon: 'bi bi-book-fill',
       color: '#16a34a',
       description: 'Digital books for learning, teaching and research.',
-      count: '123'
+      count: '58,644'
     },
 
-    {
-      title: 'e-Magazines',
-      icon: 'bi bi-newspaper',
-      color: '#dc2626',
-      description: 'Online magazines and periodicals.',
-      count: '123'
-    },
+    
 
 
     {
@@ -47,7 +41,8 @@ export class OnlineResource {
       icon: 'bi bi-database-fill',
       color: '#f59e0b',
       description: 'Access premium research databases and resources.',
-      route: '/online-databases'
+      count:'25'
+    
     }
 
   ];
