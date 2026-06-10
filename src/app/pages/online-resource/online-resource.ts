@@ -22,7 +22,7 @@ export class OnlineResource {
       icon: 'bi bi-journal-richtext',
       color: '#2563eb',
       description: 'Access scholarly journals and research publications.',
-      count: '29,701'
+      count: '58,644'
     },
 
     {
@@ -30,7 +30,7 @@ export class OnlineResource {
       icon: 'bi bi-book-fill',
       color: '#16a34a',
       description: 'Digital books for learning, teaching and research.',
-      count: '58,644'
+      count: '29,701    '
     },
 
     

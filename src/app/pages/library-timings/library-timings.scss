@@ -1,3 +1,234 @@
+// .timings-page {
+
+//   min-height: 100vh;
+
+//   padding: 50px 20px;
+
+//   background:
+//   linear-gradient(
+//     135deg,
+//     #e0f2fe,
+//     #f8fafc
+//   );
+// }
+
+// .header-section {
+
+//   text-align: center;
+
+//   margin-bottom: 50px;
+// }
+
+// .header-section h1 {
+
+//   font-size: 48px;
+
+//   color: #1e3a8a;
+
+//   font-weight: 700;
+// }
+
+// .header-section p {
+
+//   color: #64748b;
+
+//   font-size: 18px;
+// }
+
+// .timings-container {
+
+//   display: grid;
+
+//   grid-template-columns:
+//   repeat(auto-fit,minmax(320px,1fr));
+
+//   gap: 30px;
+
+//   max-width: 1200px;
+
+//   margin: auto;
+// }
+
+// .timing-card {
+
+//   background: white;
+
+//   padding: 30px;
+
+//   border-radius: 20px;
+
+//   text-align: center;
+
+//   box-shadow:
+//   0 10px 25px rgba(0,0,0,.08);
+
+//   transition: .3s;
+// }
+
+// .timing-card:hover {
+
+//   transform:
+//   translateY(-8px);
+// }
+
+// .card-icon {
+
+//   width: 80px;
+
+//   height: 80px;
+
+//   margin: auto;
+
+//   border-radius: 50%;
+
+//   display: flex;
+
+//   justify-content: center;
+
+//   align-items: center;
+
+//   margin-bottom: 20px;
+// }
+
+// .card-icon i {
+
+//   color: white;
+
+//   font-size: 35px;
+// }
+
+// .working-hours .card-icon {
+//   background: #2563eb;
+// }
+
+// .circulation .card-icon {
+//   background: #16a34a;
+// }
+
+// .reading-room .card-icon {
+//   background: #f59e0b;
+// }
+
+// .timing-card h2 {
+
+//   margin-bottom: 20px;
+
+//   color: #0f172a;
+// }
+
+// .timing-card ul {
+
+//   list-style: none;
+
+//   padding: 0;
+// }
+
+// .timing-card li {
+
+//   margin-bottom: 12px;
+
+//   color: #475569;
+// }
+
+// .notice-card {
+
+//   max-width: 900px;
+
+//   margin: 40px auto 0;
+
+//   background: #dc2626;
+
+//   color: white;
+
+//   padding: 20px;
+
+//   border-radius: 15px;
+
+//   text-align: center;
+
+//   font-size: 18px;
+
+//   font-weight: 600;
+// }
+
+// .notice-card i {
+
+//   margin-right: 10px;
+// }
+
+// .notice-card {
+
+//   display: flex;
+
+//   align-items: center;
+
+//   gap: 15px;
+
+//   margin-top: 30px;
+
+//   padding: 25px;
+
+//   border-radius: 16px;
+
+//   box-shadow:
+//     0 5px 15px rgba(0,0,0,.08);
+// }
+
+// .holiday-notice {
+
+//   background: #dc2626;
+
+//   color: white;
+// }
+
+// .holiday-notice i {
+
+//   font-size: 40px;
+
+//   color: white;
+// }
+
+// .holiday-notice h3 {
+
+//   margin: 0 0 8px;
+
+//   font-size: 22px;
+
+//   font-weight: 700;
+// }
+
+// .holiday-notice p {
+
+//   margin: 0;
+
+//   line-height: 1.8;
+
+//   font-size: 16px;
+// }
+
+// .holiday-notice strong {
+
+//   color: #fef3c7;
+// }
+
+// @media (max-width: 768px) {
+
+//   .notice-card {
+
+//     flex-direction: column;
+
+//     text-align: center;
+//   }
+
+//   .holiday-notice i {
+
+//     font-size: 32px;
+//   }
+
+// }
+
+
+
 .timings-page {
 
   min-height: 100vh;
@@ -39,59 +270,42 @@
   font-size: 18px;
 }
 
-/* CARDS GRID */
-
-.timings-container {
-
-  max-width: 1300px;
-
-  margin: auto;
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(auto-fit, minmax(320px, 1fr));
-
-  gap: 25px;
-
-  margin-bottom: 40px;
-}
-
 /* TIMING CARD */
 
 .timing-card {
+
+  max-width: 900px;
+
+  margin: 0 auto 30px;
 
   background: white;
 
   border-radius: 20px;
 
-  padding: 30px;
+  padding: 40px;
 
   text-align: center;
 
   box-shadow:
     0 8px 20px rgba(0,0,0,.08);
 
-  transition: .3s ease;
+  transition: .3s;
 }
 
 .timing-card:hover {
 
-  transform: translateY(-8px);
-
-  box-shadow:
-    0 15px 35px rgba(0,0,0,.12);
+  transform: translateY(-5px);
 }
 
 .card-icon {
 
-  width: 80px;
+  width: 90px;
 
-  height: 80px;
+  height: 90px;
 
   border-radius: 50%;
 
-  margin: auto;
+  background: #2563eb;
 
   display: flex;
 
@@ -99,67 +313,51 @@
 
   justify-content: center;
 
-  margin-bottom: 20px;
-}
-
-.working-hours .card-icon {
-
-  background: #2563eb;
-}
-
-.circulation .card-icon {
-
-  background: #059669;
-}
-
-.reading-room .card-icon {
-
-  background: #ea580c;
+  margin: 0 auto 20px;
 }
 
 .card-icon i {
 
   color: white;
 
-  font-size: 34px;
+  font-size: 40px;
 }
 
 .timing-card h2 {
 
   color: #1e3a8a;
 
-  font-size: 24px;
+  margin-bottom: 25px;
 
-  margin-bottom: 20px;
+  font-size: 30px;
 }
 
-.timing-card ul {
+.timing-content p {
 
-  list-style: none;
+  font-size: 20px;
 
-  padding: 0;
+  color: #334155;
 
-  margin: 0;
-}
-
-.timing-card li {
+  line-height: 2;
 
   margin-bottom: 15px;
-
-  color: #475569;
-
-  line-height: 1.8;
-
-  font-size: 16px;
 }
 
 /* NOTICE CARD */
 
 .notice-card {
 
-  max-width: 1300px;
+  max-width: 900px;
 
-  margin: auto;
+  margin: 30px auto;
+
+  background: #dc2626;
+
+  color: white;
+
+  border-radius: 20px;
+
+  padding: 25px;
 
   display: flex;
 
@@ -167,82 +365,56 @@
 
   gap: 20px;
 
-  padding: 25px;
-
-  border-radius: 20px;
-
   box-shadow:
-    0 8px 20px rgba(0,0,0,.08);
+    0 8px 20px rgba(0,0,0,.1);
 }
 
-.holiday-notice {
+.notice-card i {
 
-  background: #dc2626;
-
-  color: white;
+  font-size: 45px;
 }
 
-.notice-icon i {
+.notice-card h3 {
 
-  font-size: 50px;
-
-  color: white;
-}
-
-.notice-content h3 {
-
-  margin: 0 0 10px;
+  margin-bottom: 8px;
 
   font-size: 24px;
-
-  font-weight: 700;
 }
 
-.notice-content p {
+.notice-card p {
 
   margin: 0;
 
   line-height: 1.8;
-
-  font-size: 16px;
 }
 
-.notice-content strong {
+.notice-card strong {
 
-  color: #fef3c7;
+  color: #fde68a;
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 992px) {
-
-  .header-section h1 {
-
-    font-size: 40px;
-  }
-
-}
-
 @media (max-width: 768px) {
-
-  .timings-page {
-
-    padding: 30px 15px;
-  }
 
   .header-section h1 {
 
     font-size: 32px;
   }
 
-  .header-section p {
+  .timing-card {
 
-    font-size: 16px;
+    padding: 25px;
   }
 
-  .timings-container {
+  .timing-card h2 {
 
-    grid-template-columns: 1fr;
+    font-size: 24px;
+  }
+
+  .timing-content p {
+
+    font-size: 16px;
   }
 
   .notice-card {
@@ -252,40 +424,6 @@
     text-align: center;
   }
 
-  .notice-icon i {
-
-    font-size: 40px;
-  }
-
-  .notice-content h3 {
-
-    font-size: 20px;
-  }
-
 }
 
-@media (max-width: 480px) {
 
-  .header-section h1 {
-
-    font-size: 28px;
-  }
-
-  .timing-card {
-
-    padding: 20px;
-  }
-
-  .card-icon {
-
-    width: 70px;
-
-    height: 70px;
-  }
-
-  .card-icon i {
-
-    font-size: 28px;
-  }
-
-}
