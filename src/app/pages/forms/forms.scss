@@ -1,0 +1,210 @@
+.forms-page {
+
+  min-height: 100vh;
+
+  padding: 50px 20px;
+
+  background: #f8fafc;
+}
+
+.page-header {
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+
+  color: #1e3a8a;
+
+  font-size: 42px;
+
+  font-weight: 700;
+}
+
+.page-header p {
+
+  color: #64748b;
+
+  font-size: 18px;
+}
+
+.forms-grid {
+
+  max-width: 1000px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+  gap: 25px;
+}
+
+.form-card {
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+  transition: .3s;
+}
+
+.form-card:hover {
+
+  transform: translateY(-8px);
+}
+
+.form-icon {
+
+  width: 90px;
+
+  height: 90px;
+
+  border-radius: 50%;
+
+  background: #dc2626;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.form-icon.word {
+
+  background: #2563eb;
+}
+
+.form-icon i {
+
+  color: white;
+
+  font-size: 40px;
+}
+
+.form-card h2 {
+
+  color: #1e3a8a;
+
+  margin-bottom: 15px;
+}
+
+.form-card p {
+
+  color: #64748b;
+
+  min-height: 60px;
+}
+
+.download-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background: #dc2626;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 12px 25px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+}
+
+.word-btn {
+
+  background: #2563eb;
+}
+
+
+.back-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 20px;
+
+  margin-bottom: 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #1e3a8a;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 4px 12px rgba(30, 58, 138, 0.25);
+}
+
+.back-btn:hover {
+
+  background: #2563eb;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+.back-btn:active {
+
+  transform: scale(0.98);
+}
+
+.back-btn i {
+
+  font-size: 18px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .back-btn {
+
+    padding: 9px 16px;
+
+    font-size: 14px;
+  }
+
+  .back-btn i {
+
+    font-size: 16px;
+  }
+
+}

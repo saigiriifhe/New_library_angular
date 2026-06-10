@@ -15,6 +15,7 @@ import { IfheHolidaysList } from './pages/ifhe-holidays-list/ifhe-holidays-list'
 import { SpecialAnnouncement } from './pages/special-announcement/special-announcement';
 import { Noticedetails } from './pages/noticedetails/noticedetails';
 import { Holidays } from './pages/holidays/holidays';
+import { Forms } from './pages/forms/forms';
 
 
 export const routes: Routes = [
@@ -84,8 +85,8 @@ export const routes: Routes = [
     component:Holidays
 },
 {
-path :'special-announcement',
-component:SpecialAnnouncement
+path :'library-forms',
+component:Forms
 },
 {
 path:'opac',
