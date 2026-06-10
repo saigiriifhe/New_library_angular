@@ -1,33 +1,35 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
-import { Location } from '@angular/common';
+import { BackButton } from '../../shared/back-button/back-button';
+// import { Router, RouterLink } from '@angular/router';
+// import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-forms',
   standalone: true,
-  imports: [RouterLink],
+  imports: [BackButton],
   templateUrl: './forms.html',
   styleUrl: './forms.scss'
 })
 export class Forms {
 
-  constructor(
-    private location: Location,
-    private router: Router
-  ) {}
+  // constructor(
+  //   private location: Location,
+  //   private router: Router
+  // ) {}
 
-  goBack(): void {
+  // goBack(): void {
 
-    if (window.history.length > 1) {
+  //   if (window.history.length > 1) {
 
-      this.location.back();
+  //     this.location.back();
 
-    } else {
+  //   } else {
 
-      this.router.navigate(['/']);
+  //     this.router.navigate(['/']);
 
-    }
+  //   }
 
-  }
+  // }
 
 }

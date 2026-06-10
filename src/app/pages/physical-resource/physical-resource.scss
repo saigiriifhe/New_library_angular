@@ -103,3 +103,49 @@
 
   font-weight: 600;
 }
+
+
+.back-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 20px;
+
+  margin-bottom: 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #1e3a8a;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition: all .3s ease;
+}
+
+.back-btn:hover {
+
+  background: #2563eb;
+
+  transform: translateY(-2px);
+}
+
+.back-btn i {
+
+  font-size: 16px;
+}
+
+

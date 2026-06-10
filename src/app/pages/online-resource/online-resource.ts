@@ -2,18 +2,39 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { count } from 'console';
+import { Router,RouterLink } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-online-resource',
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,RouterLink
   ],
   templateUrl: './online-resource.html',
   styleUrl: './online-resource.scss'
 })
 export class OnlineResource {
+
+  constructor(
+    private location: Location,
+    private router: Router
+  ) {}
+
+  goBack(): void {
+
+    if (window.history.length > 1) {
+
+      this.location.back();
+
+    } else {
+
+      this.router.navigate(['/']);
+
+    }
+
+  }
 
   resources = [
 

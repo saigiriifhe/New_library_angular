@@ -11,7 +11,7 @@ import { LibraryNotices } from './pages/library-notices/library-notices';
 import { OnlineDatabases } from './pages/online-databases/online-databases';
 import { NewArrivals } from './pages/new-arrivals/new-arrivals';
 import { Opac } from './pages/opac/opac';
-import { IfheHolidaysList } from './pages/ifhe-holidays-list/ifhe-holidays-list';
+// import { IfheHolidaysList } from './pages/ifhe-holidays-list/ifhe-holidays-list';
 import { SpecialAnnouncement } from './pages/special-announcement/special-announcement';
 import { Noticedetails } from './pages/noticedetails/noticedetails';
 import { Holidays } from './pages/holidays/holidays';

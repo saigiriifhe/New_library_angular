@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router, RouterLink } from '@angular/router';
+import { Location } from '@angular/common';
+import { BackButton } from '../../shared/back-button/back-button';
 
 @Component({
   selector: 'app-physical-resource',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,BackButton],
   templateUrl: './physical-resource.html',
   styleUrl: './physical-resource.scss'
 })
 export class PhysicalResource {
+
+
+
 
   resources = [
 

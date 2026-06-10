@@ -1,21 +1,14 @@
-// import { Component } from '@angular/core';
 
-// @Component({
-//   selector: 'app-library-notices',
-//   imports: [],
-//   templateUrl: './library-notices.html',
-//   styleUrl: './library-notices.scss',
-// })
-// export class LibraryNotices {}
 
 
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BackButton } from '../../shared/back-button/back-button';
 
 @Component({
   selector: 'app-library-notices',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,BackButton],
   templateUrl: './library-notices.html',
   styleUrl: './library-notices.scss'
 })

@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { BackButton } from '../../shared/back-button/back-button';
 
 @Component({
   selector: 'app-feedback',
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,BackButton
   ],
   templateUrl: './feedback.html',
   styleUrl: './feedback.scss'

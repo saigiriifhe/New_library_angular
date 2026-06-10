@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BackButton } from '../../shared/back-button/back-button';
 
 @Component({
   selector: 'app-new-arrivals',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,BackButton],
   templateUrl: './new-arrivals.html',
   styleUrl: './new-arrivals.scss'
 })

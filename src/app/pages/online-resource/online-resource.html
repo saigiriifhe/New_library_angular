@@ -1,47 +1,46 @@
-<div class="resource-grid">
 
-  @for(item of resources; track item.title){
+<div class="resource-page">
 
-  <div class="resource-card">
+  <button
+    class="back-btn"
+    routerLink="/">
 
-    <div
-      class="icon-box"
-      [style.background]="item.color">
+    <i class="bi bi-arrow-left"></i>
 
-      <i class="{{item.icon}}"></i>
+    Back
+
+  </button>
+
+  <div class="resource-grid">
+
+    @for(item of resources; track item.title){
+
+    <div class="resource-card">
+
+      <div
+        class="icon-box"
+        [style.background]="item.color">
+
+        <i class="{{item.icon}}"></i>
+
+      </div>
+
+      <h2>
+        {{item.title}}
+      </h2>
+
+      @if(item.count){
+
+      <div class="resource-count">
+        {{item.count}}
+      </div>
+
+      }
 
     </div>
 
-    <h2>
-      {{item.title}}
-    </h2>
-<!-- 
-    <p>
-      {{item.description}}
-    </p> -->
-
-   @if(item.count){
-
-<div class="resource-count">
-  {{item.count}}
-</div>
-
-}
-
-    <!-- @if(item.route){
-
-      <a
-        [routerLink]="item.route"
-        class="resource-btn">
-
-        View Databases
-
-      </a>
-
-    } -->
+    }
 
   </div>
-
-  }
 
 </div>

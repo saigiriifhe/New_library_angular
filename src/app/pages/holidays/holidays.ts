@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BackButton } from '../../shared/back-button/back-button';
 
 @Component({
   selector: 'app-holidays',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,BackButton],
   templateUrl: './holidays.html',
   styleUrl: './holidays.scss'
 })
