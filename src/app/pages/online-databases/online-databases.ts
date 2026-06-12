@@ -77,6 +77,12 @@ export class OnlineDatabases {
       officialUrl: 'https://awsone.capitaline.com',
       description: `Capitaline AWS database provides fundamental and market data on more than 20,000 Indian listed and unlisted companies, classified under more than 300 industries, along with powerful analytic tools. Extensive data and analysis on every company profile, directors, more than 10-year financials (P&L, balance sheet, cash flow, consolidated financial data, segment data, forex data, R&D data, ratios, etc), quarterly results, ownership pattern, finished products, raw materials, share price data, directors' report, management discussion, notes to account, business news, corporate events, etc.`,
     },
+      {
+      name: 'Capitaline Nav India Enterprise Veresion  ',
+      officialUrl: 'http://www.capitaline.com',
+      description: `Capitaline NAV is vastly more varied and in-depth database on the mutual fund industry. Database coverage on the mutual fund industry includes 5,000 schemes of 41 AMCs, with user-friendly data presentation — be it on an scheme/AMC, tracking NAVs, scheme details, performances, rankings, portfolios, etc.
+Cross validation controls ensure data accuracy and views, analysis and reports, Fund managers’ profiles/commentaries & basic company profiles are some of the value additions for making informed decisions and to stay on top.`,
+    },
     {
       name: 'CMIE Prowess',
       officialUrl: 'https://prowess.cmie.com/',
@@ -105,12 +111,7 @@ Cross validation controls ensure data accuracy and views, analysis and reports, 
 `,
     },
 
-    {
-      name: 'Capitaline NAV',
-      officialUrl: 'http://www.capitaline.com',
-      description: `Capitaline NAV is vastly more varied and in-depth database on the mutual fund industry. Database coverage on the mutual fund industry includes 5,000 schemes of 41 AMCs, with user-friendly data presentation — be it on an scheme/AMC, tracking NAVs, scheme details, performances, rankings, portfolios, etc.
-Cross validation controls ensure data accuracy and views, analysis and reports, Fund managers’ profiles/commentaries & basic company profiles are some of the value additions for making informed decisions and to stay on top.`,
-    },
+  
   ];
 
 
@@ -118,7 +119,7 @@ Cross validation controls ensure data accuracy and views, analysis and reports, 
 
   eBooks = [
     {
-      name: 'EBSCO eBooks Collection',
+      name: 'Ebsco eBook Business Collection ',
       officialUrl: 'http://search.ebscohost.com',
       description: `Ebsco eBook Business Collection contains more than 27000 eBooks related to business management.  It covers various subject topics such as business management, marketing, finance, economics, operations and engineering etc. Titles are available from many noteworthy academic and business publishers including Oxford University Press, Cambridge Scholars Publishing, World Scientific Publishing Company, Princeton University Press, Amacom and Gallup Press etc.  
 Research Related Databases 

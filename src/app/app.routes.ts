@@ -16,6 +16,7 @@ import { SpecialAnnouncement } from './pages/special-announcement/special-announ
 import { Noticedetails } from './pages/noticedetails/noticedetails';
 import { Holidays } from './pages/holidays/holidays';
 import { Forms } from './pages/forms/forms';
+import { SubscribedPeriodicals } from './pages/subscribed-periodicals/subscribed-periodicals';
 
 
 export const routes: Routes = [
@@ -91,6 +92,10 @@ component:Forms
 {
 path:'opac',
 component:Opac
+},
+
+{
+path:'subscribed-periodicals',component:SubscribedPeriodicals
 },
 
 

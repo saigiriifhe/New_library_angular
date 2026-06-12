@@ -1,13 +1,13 @@
-// .statistics {
-//   padding: 80px 0;
-// }
+.home-page {
+  display: flex;
 
-// .statistics h2 {
-//   text-align: center;
-//   margin-bottom: 40px;
-// }
+  flex-direction: column;
+  min-height: 100%;
+}
 
-// .statistics h1 {
-//   color: #2563eb;
-//   font-weight: 700;
-// }
+.hero-wrapper {
+  min-height: 100%;
+  flex: 1;
+
+  display: flex;
+}

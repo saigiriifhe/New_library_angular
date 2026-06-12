@@ -27,7 +27,7 @@ export class DigitalLibrary {
     },
 
     {
-      title: 'DSpace Institutional Repository',
+      title: 'IFHE Institutional Repository',
       description:
       'Browse institutional publications, thesis, dissertations and research archives.',
 

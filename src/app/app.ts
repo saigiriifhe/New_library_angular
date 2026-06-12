@@ -10,7 +10,8 @@ import {Footer} from './shared/footer/footer';
     //IconMenuComponent,
     LibraryHeader,
   
-    Footer],
+    Footer
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

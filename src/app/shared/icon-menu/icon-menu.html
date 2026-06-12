@@ -1,36 +1,17 @@
 <div class="icon-menu-container">
-
-  @for(menu of menus; track menu.title){
-
-    <div
-      class="menu-card"
-      (click)="openMenu(menu)">
-
-     <div
-  class="icon-circle"
-  [style.background]="menu.color">
-
-  @if(menu.image){
-
-    <img
-      [src]="menu.image"
-      [alt]="menu.title"
-      class="menu-image">
-
-  } @else {
-
-    <i [class]="menu.icon"></i>
-
-  }
-
-</div>
+  @for (menu of menus; track menu.title) {
+    <div class="menu-card" (click)="openMenu(menu)">
+      <div class="icon-circle" [style.background]="menu.color">
+        @if (menu.image) {
+          <img [src]="menu.image" [alt]="menu.title" class="menu-image" />
+        } @else {
+          <i [class]="menu.icon"></i>
+        }
+      </div>
 
       <span>
         {{ menu.title }}
       </span>
-
     </div>
-
   }
-
 </div>

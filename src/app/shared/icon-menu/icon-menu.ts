@@ -3,6 +3,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
 
 @Component({
   selector: 'app-icon-menu',
@@ -36,6 +37,11 @@ export class IconMenuComponent {
     },
 
     { title: 'Online Resources', icon: 'bi-globe', color: '#F5A623', route: '/online-resource' },
+    {
+  title: 'Subscribed Periodicals',
+  icon: 'bi bi-journal-richtext', color:'#98ad37',
+  route: '/subscribed-periodicals'
+},
 
     {
       title: 'Digital Library',
