@@ -6,19 +6,42 @@
 
     <h1>Subscribed Periodicals</h1>
 
-   
+    <!-- <p>
+      N J Yasaswy Memorial Library
+    </p> -->
 
   </div>
 
-  <div class="coming-soon-card">
+  <div class="periodicals-grid">
 
-    <i class="bi bi-journal-richtext"></i>
+    @for(item of periodicals; track item.title){
 
-    <h2>Content Will Be Updated Soon</h2>
+      <a
+        [href]="item.file"
+        target="_blank"
+        class="periodical-card">
 
-    <p>
-      Information regarding subscribed periodicals will be made available shortly.
-    </p>
+        <div class="icon-box">
+
+          <i class=" {{item.icon}}"></i>
+
+        </div>
+
+        <h2>
+          {{item.title}}
+        </h2>
+
+        <span class="view-btn">
+
+          <i class="bi bi-file-earmark-pdf-fill pdf-icon"></i>
+
+          Open PDF
+
+        </span>
+
+      </a>
+
+    }
 
   </div>
 
