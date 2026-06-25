@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BackButton } from '../../shared/back-button/back-button';
+import { Router } from '@angular/router';
+// import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-digital-library',
@@ -10,6 +12,8 @@ import { BackButton } from '../../shared/back-button/back-button';
   styleUrl: './digital-library.scss'
 })
 export class DigitalLibrary {
+
+  constructor(private router: Router) {}
 
   resources = [
 
@@ -50,8 +54,34 @@ export class DigitalLibrary {
 
       link:
       'https://www.ndl.gov.in/'
-    }
+    },
+    {
+  title: 'Open Access Resources',
+
+  icon: 'bi bi-globe2',
+
+  color: '#10b981',
+
+  description: 'Access free eBooks, journals, repositories and research resources.',
+
+  route: '/open-access-resources'
+},
 
   ];
+
+
+  openResource(resource: any): void {
+
+  if (resource.route) {
+
+    this.router.navigate([resource.route]);
+
+  } else {
+
+    window.open(resource.link, '_blank');
+
+  }
+
+}
 
 }
