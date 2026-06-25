@@ -68,6 +68,12 @@ export class IconMenuComponent {
     {
       title: 'IFHE Holidays List',icon: 'bi-calendar-event',color: '#2E8B57',route: '/ifhe-holidays-list',},
 
+{
+  title: 'Open Access Resources',
+  icon: 'bi bi-mortarboard-fill',
+  color: '#10b981',
+  route: '/open-access-resources'
+},
     { title: 'Feedback', icon: 'bi-chat-dots', color: '#E15B64', route: '/feedback' },
   ];
 

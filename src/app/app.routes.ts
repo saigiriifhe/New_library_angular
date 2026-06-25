@@ -17,6 +17,7 @@ import { Noticedetails } from './pages/noticedetails/noticedetails';
 import { Holidays } from './pages/holidays/holidays';
 import { Forms } from './pages/forms/forms';
 import { SubscribedPeriodicals } from './pages/subscribed-periodicals/subscribed-periodicals';
+import { OpenAccessResources } from './pages/open-access-resources/open-access-resources';
 
 
 export const routes: Routes = [
@@ -96,6 +97,10 @@ component:Opac
 
 {
 path:'subscribed-periodicals',component:SubscribedPeriodicals
+},
+{
+  path: 'open-access-resources',
+  component: OpenAccessResources
 },
 
 
