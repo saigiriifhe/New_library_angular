@@ -645,26 +645,53 @@
 
 
 //=======================
+// .timings-page {
+
+//   // min-height: 100vh;
+
+//   position: relative;
+
+//   background-image:
+//     linear-gradient(
+//       rgba(255,255,255,.08),
+//       rgba(255,255,255,.08)
+//     ),
+//     url('/assets/timings/hall.png');
+
+//   background-size: contain;
+
+//   background-position: center;
+
+//   background-repeat: no-repeat;
+
+//   background-attachment: fixed;
+
+//   display: flex;
+
+//   justify-content: center;
+
+//   align-items: center;
+
+//   width: 100vw;
+
+//   height: 100vh;
+
+//   overflow: hidden;
+
+//   margin: 0;
+
+//   padding: 0;
+
+//   position: relative;
+// }
+
 .timings-page {
 
-  min-height: 100vh;
+  width: 100%;
+
+  height: calc(100vh - 100px); // Adjust 90px to match your header height
 
   position: relative;
-
-  background-image:
-    linear-gradient(
-      rgba(255,255,255,.08),
-      rgba(255,255,255,.08)
-    ),
-    url('/assets/timings/reading-hall.jpeg');
-
-  background-size: cover;
-
-  background-position: center;
-
-  background-repeat: no-repeat;
-
-  background-attachment: fixed;
 
   display: flex;
 
@@ -672,7 +699,26 @@
 
   align-items: center;
 
-  padding: 40px;
+  margin: 0;
+
+  padding: 20px;
+
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.05),
+      rgba(255,255,255,.05)
+    ),
+    url('/assets/timings/hall3.png');
+
+  background-size: contain;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-color: #f8fafc;
 }
 
 .overlay{
@@ -694,7 +740,7 @@
 
   padding: 60px;
 
-  background: rgba(255,255,255,.75);
+  background: rgba(255,255,255,.25);
 
   backdrop-filter: blur(4px);
 
@@ -828,4 +874,107 @@ app-back-button{
   left: 25px;
 
   z-index: 1000;
+}
+
+
+
+.center-title {
+
+  position: absolute;
+
+  top: 30px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: rgba(255,255,255,.96);
+
+  padding: 18px 50px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+
+.center-title h1{
+
+  margin:0;
+
+  font-size:64px;
+
+  font-weight:700;
+
+  color:#111827;
+}
+
+.left-info h2,
+.right-info h2{
+
+  font-size:32px;
+
+  font-weight:700;
+
+  color:#111827;
+
+  margin-bottom:20px;
+}
+
+.left-info h3,
+.right-info h3{
+
+  font-size:24px;
+
+  font-weight:600;
+
+  margin-top:18px;
+
+  color:#374151;
+}
+
+.left-info p,
+.right-info p{
+
+  font-size:24px;
+
+  font-weight:700;
+
+  color:#111827;
+
+  margin-top:8px;
+}
+
+.right-info h4{
+
+  margin-top:22px;
+
+  font-size:22px;
+
+  line-height:1.6;
+
+  font-weight:600;
+
+  color:#111827;
+}
+
+.left-info{
+
+  position:absolute;
+
+  left:8%;
+
+  top:55%;
+
+  transform:translateY(-50%);
+}
+
+.right-info{
+
+  position:absolute;
+
+  right:8%;
+
+  top:55%;
+
+  transform:translateY(-50%);
 }
