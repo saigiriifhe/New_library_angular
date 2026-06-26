@@ -2,55 +2,402 @@
 
 
 
-// .timings-grid {
+// // .timings-grid {
 
-//   max-width: 1300px;
+// //   max-width: 1300px;
 
-//   margin: 0 auto;
+// //   margin: 0 auto;
 
-//   display: grid;
+// //   display: grid;
 
-//   grid-template-columns: repeat(2, minmax(0, 1fr));
+// //   grid-template-columns: repeat(2, minmax(0, 1fr));
 
-//   gap: 20px;
+// //   gap: 20px;
+// // }
+
+// // /* HEADER */
+
+// // .header-section {
+
+// //   text-align: center;
+
+// //   margin-bottom: 50px;
+// // }
+
+// // .header-section h1 {
+
+// //   font-size: 48px;
+
+// //   font-weight: 700;
+
+// //   color: #1e3a8a;
+
+// //   margin-bottom: 10px;
+// // }
+
+// // .header-section p {
+
+// //   color: #64748b;
+
+// //   font-size: 18px;
+// // }
+
+// // /* TIMING CARD */
+
+// // .timing-card {
+
+// //   background: white;
+
+// //   border-radius: 20px;
+
+// //   padding: 30px;
+
+// //   text-align: center;
+
+// //   box-shadow:
+// //     0 8px 20px rgba(0,0,0,.08);
+
+// //   transition: .3s;
+
+// //   height: 100%;
+// // }
+
+// // .timing-card:hover {
+
+// //   transform: translateY(-5px);
+// // }
+
+// // .timing-card:hover {
+
+// //   transform: translateY(-5px);
+// // }
+
+// // .card-icon {
+
+// //   width: 80px;
+
+// //   height: 80px;
+
+// //   border-radius: 50%;
+
+// //   background: #2563eb;
+
+// //   display: flex;
+
+// //   align-items: center;
+
+// //   justify-content: center;
+
+// //   margin: 0 auto 15px;
+// // }
+
+
+
+// // .card-icon i {
+
+// //   color: white;
+
+// //   font-size: 34px;
+// // }
+
+// // .timing-card h2 {
+
+// //   color: #1e3a8a;
+
+// //   margin-bottom: 15px;
+
+// //   font-size: 28px;
+
+// //   font-weight: 600;
+// // }
+
+// // .timing-content p {
+
+// //   font-size: 18px;
+
+// //   color: #334155;
+
+// //   line-height: 1.6;
+
+// //   margin-bottom: 12px;
+
+// // }
+
+// // /* NOTICE CARD */
+
+// // .notice-card {
+
+// //   max-width: 1300px;
+
+// //   margin: 20px auto 0;
+
+// //   background: #dc2626;
+
+// //   color: white;
+
+// //   border-radius: 20px;
+
+// //   padding: 20px;
+
+// //   display: flex;
+
+// //   align-items: center;
+
+// //   gap: 15px;
+
+// //   box-shadow:
+// //     0 8px 20px rgba(0,0,0,.1);
+// // }
+
+// // .notice-card i {
+
+// //   font-size: 45px;
+// // }
+
+// // .notice-card h3 {
+
+// //   margin-bottom: 8px;
+
+// //   font-size: 24px;
+// // }
+
+// // .notice-card p {
+
+// //   margin: 0;
+
+// //   line-height: 1.8;
+
+// //   justify-content: flex-start;
+// // }
+
+// // .notice-card strong {
+
+// //   color: #fde68a;
+// // }
+
+// // /* RESPONSIVE */
+
+// // @media (max-width: 768px) {
+
+// //   .header-section h1 {
+
+// //     font-size: 32px;
+// //   }
+
+// //   .timings-grid {
+
+// //     grid-template-columns: 1fr;
+// //   }
+
+// //   .timing-card {
+
+// //     padding: 20px;
+// //   }
+
+// //   .timing-card h2 {
+
+// //     font-size: 24px;
+// //   }
+
+// //   .timing-content p {
+
+// //     font-size: 16px;
+// //   }
+
+// //   .notice-card {
+
+// //     flex-direction: column;
+
+// //     text-align: center;
+// //   }
+// // }
+
+
+
+
+
+// // .back-btn {
+
+// //   display: inline-flex;
+
+// //   align-items: center;
+
+// //   gap: 8px;
+
+// //   padding: 10px 20px;
+
+// //   // margin-bottom: 25px;
+
+// //   // margin-top: -50px;
+
+// //   border: none;
+
+// //   border-radius: 10px;
+
+// //   background: #1e3a8a;
+
+// //   color: white;
+
+// //   font-size: 15px;
+
+// //   font-weight: 600;
+
+// //   cursor: pointer;
+
+// //   transition: all 0.3s ease;
+
+// //   box-shadow:
+// //     0 4px 12px rgba(30, 58, 138, 0.25);
+
+// //      text-decoration: none;
+// // }
+
+// // .back-btn:hover {
+
+// //   background: #2563eb;
+
+// //   transform: translateY(-2px);
+
+// //   box-shadow:
+// //     0 8px 18px rgba(37, 99, 235, 0.35);
+// // }
+
+// // .back-btn:active {
+
+// //   transform: scale(0.98);
+// // }
+
+// // .back-btn i {
+
+// //   font-size: 18px;
+// // }
+
+// // /* Mobile */
+
+// // @media (max-width: 768px) {
+
+// //   .back-btn {
+
+// //     padding: 9px 16px;
+
+// //     font-size: 14px;
+// //   }
+
+// //   .back-btn i {
+
+// //     font-size: 16px;
+// //   }
+
+// // }
+
+// // .timings-grid {
+
+// //   max-width: 1300px;
+
+// //   margin: 0 auto 30px;
+
+// //   display: grid;
+
+// //   grid-template-columns: repeat(2, 1fr);
+
+// //   gap: 30px;
+
+// //   align-items: stretch;
+// // }
+
+
+// // @media (max-width: 768px) {
+
+// //   .timings-grid {
+
+// //     grid-template-columns: 1fr;
+// //   }
+
+// // }
+
+// html,
+// body {
+
+//   margin: 0;
+
+//   padding: 0;
+
+//   height: 100%;
+
+//   overflow: hidden;
 // }
 
-// /* HEADER */
+// .timings-page {
 
-// .header-section {
+//   min-height: 100vh;
+
+//   padding: 10px;
+
+//   background:
+//     linear-gradient(
+//       to bottom,
+//       #f8fafc,
+//       #eef2ff
+//     );
+
+//   overflow-x: hidden;
+// }
+
+// /* PAGE TITLE */
+
+// .page-title {
 
 //   text-align: center;
 
-//   margin-bottom: 50px;
+//   margin-bottom: 30px;
 // }
 
-// .header-section h1 {
-
-//   font-size: 48px;
-
-//   font-weight: 700;
+// .page-title h1 {
 
 //   color: #1e3a8a;
+
+//   font-size: 42px;
+
+//   font-weight: 700;
 
 //   margin-bottom: 10px;
 // }
 
-// .header-section p {
+// .page-title p {
 
 //   color: #64748b;
 
 //   font-size: 18px;
 // }
 
-// /* TIMING CARD */
+// /* CARDS GRID */
+
+// .timings-grid {
+
+//   max-width: 1300px;
+
+//   margin: 0 auto;
+
+//   display: flex;
+
+//   gap: 25px;
+
+//   align-items: stretch;
+
+//   justify-content: center;
+// }
+
+// /* CARD */
 
 // .timing-card {
+
+//   flex: 1;
 
 //   background: white;
 
 //   border-radius: 20px;
 
-//   padding: 30px;
+//   padding: 35px;
 
 //   text-align: center;
 
@@ -59,18 +406,24 @@
 
 //   transition: .3s;
 
-//   height: 100%;
+//   min-height: 320px;
+
+//   display: flex;
+
+//   flex-direction: column;
+
+//   justify-content: center;
 // }
 
 // .timing-card:hover {
 
 //   transform: translateY(-5px);
+
+//   box-shadow:
+//     0 15px 30px rgba(0,0,0,.12);
 // }
 
-// .timing-card:hover {
-
-//   transform: translateY(-5px);
-// }
+// /* ICON */
 
 // .card-icon {
 
@@ -88,10 +441,8 @@
 
 //   justify-content: center;
 
-//   margin: 0 auto 15px;
+//   margin: 0 auto 20px;
 // }
-
-
 
 // .card-icon i {
 
@@ -100,36 +451,37 @@
 //   font-size: 34px;
 // }
 
+// /* CONTENT */
+
 // .timing-card h2 {
 
 //   color: #1e3a8a;
 
-//   margin-bottom: 15px;
-
 //   font-size: 28px;
 
-//   font-weight: 600;
+//   margin-bottom: 20px;
 // }
 
 // .timing-content p {
 
 //   font-size: 18px;
 
+//   line-height: 1.8;
+
 //   color: #334155;
 
-//   line-height: 1.6;
-
-//   margin-bottom: 12px;
-
+//   margin-bottom: 15px;
 // }
 
-// /* NOTICE CARD */
+// /* NOTICE */
 
 // .notice-card {
 
 //   max-width: 1300px;
 
-//   margin: 20px auto 0;
+//   margin: 25px auto 0;
+
+//   margin-bottom: 60px;
 
 //   background: #dc2626;
 
@@ -137,13 +489,13 @@
 
 //   border-radius: 20px;
 
-//   padding: 20px;
+//   padding: 25px;
 
 //   display: flex;
 
 //   align-items: center;
 
-//   gap: 15px;
+//   gap: 20px;
 
 //   box-shadow:
 //     0 8px 20px rgba(0,0,0,.1);
@@ -156,7 +508,7 @@
 
 // .notice-card h3 {
 
-//   margin-bottom: 8px;
+//   margin-bottom: 10px;
 
 //   font-size: 24px;
 // }
@@ -166,8 +518,6 @@
 //   margin: 0;
 
 //   line-height: 1.8;
-
-//   justify-content: flex-start;
 // }
 
 // .notice-card strong {
@@ -175,23 +525,30 @@
 //   color: #fde68a;
 // }
 
-// /* RESPONSIVE */
+// /* MOBILE */
 
 // @media (max-width: 768px) {
 
-//   .header-section h1 {
+//   .page-title h1 {
 
-//     font-size: 32px;
+//     font-size: 30px;
+//   }
+
+//   .page-title p {
+
+//     font-size: 16px;
 //   }
 
 //   .timings-grid {
 
-//     grid-template-columns: 1fr;
+//     flex-direction: column;
 //   }
 
 //   .timing-card {
 
-//     padding: 20px;
+//     min-height: auto;
+
+//     padding: 25px;
 //   }
 
 //   .timing-card h2 {
@@ -210,367 +567,265 @@
 
 //     text-align: center;
 //   }
+
+//   .notice-card i {
+
+//     font-size: 36px;
+//   }
+
 // }
 
 
 
+//===================================================================
+// .timings-page {
 
+//   min-height: 100vh;
 
-// .back-btn {
+// //   background:
+// // linear-gradient(
+// // rgba(0,0,0,.18),
+// // rgba(0,0,0,.18)
+// // ),
+// // url('/assets/timings/reading-hall.jpeg');
 
-//   display: inline-flex;
+// background:
+// linear-gradient(
+// rgba(255,255,255,.08),
+// rgba(255,255,255,.08)
+// ),
+// url('/assets/timings/reading-hall.jpeg');
+
+//   background-size: cover;
+
+//   background-position: center;
+
+//   background-repeat: no-repeat;
+
+//   padding: 30px;
+// }
+
+// .timings-page {
+
+//   background-image: url('/assets/timings/reading-hall.jpeg');
+
+//   background-size: cover;
+
+//   background-position: center center;
+
+//   background-repeat: no-repeat;
+
+//   background-attachment: fixed;
+// }
+
+// .background-overlay {
+
+//   display: flex;
+
+//   justify-content: center;
 
 //   align-items: center;
+// }
 
-//   gap: 8px;
+// .document-viewer {
 
-//   padding: 10px 20px;
+//   width: 750px;
 
-//   // margin-bottom: 25px;
-
-//   // margin-top: -50px;
+//   height: 550px;
 
 //   border: none;
 
-//   border-radius: 10px;
+//   border-radius: 20px;
 
-//   background: #1e3a8a;
+//   background: white;
 
-//   color: white;
-
-//   font-size: 15px;
-
-//   font-weight: 600;
-
-//   cursor: pointer;
-
-//   transition: all 0.3s ease;
-
-//   box-shadow:
-//     0 4px 12px rgba(30, 58, 138, 0.25);
-
-//      text-decoration: none;
-// }
-
-// .back-btn:hover {
-
-//   background: #2563eb;
-
-//   transform: translateY(-2px);
-
-//   box-shadow:
-//     0 8px 18px rgba(37, 99, 235, 0.35);
-// }
-
-// .back-btn:active {
-
-//   transform: scale(0.98);
-// }
-
-// .back-btn i {
-
-//   font-size: 18px;
-// }
-
-// /* Mobile */
-
-// @media (max-width: 768px) {
-
-//   .back-btn {
-
-//     padding: 9px 16px;
-
-//     font-size: 14px;
-//   }
-
-//   .back-btn i {
-
-//     font-size: 16px;
-//   }
+//   box-shadow: 0 15px 35px rgba(0,0,0,.35);
 
 // }
 
-// .timings-grid {
 
-//   max-width: 1300px;
-
-//   margin: 0 auto 30px;
-
-//   display: grid;
-
-//   grid-template-columns: repeat(2, 1fr);
-
-//   gap: 30px;
-
-//   align-items: stretch;
-// }
-
-
-// @media (max-width: 768px) {
-
-//   .timings-grid {
-
-//     grid-template-columns: 1fr;
-//   }
-
-// }
-
-html,
-body {
-
-  margin: 0;
-
-  padding: 0;
-
-  height: 100%;
-
-  overflow: hidden;
-}
-
+//=======================
 .timings-page {
 
   min-height: 100vh;
 
-  padding: 10px;
+  position: relative;
 
-  background:
+  background-image:
     linear-gradient(
-      to bottom,
-      #f8fafc,
-      #eef2ff
-    );
+      rgba(255,255,255,.08),
+      rgba(255,255,255,.08)
+    ),
+    url('/assets/timings/reading-hall.jpeg');
 
-  overflow-x: hidden;
-}
+  background-size: cover;
 
-/* PAGE TITLE */
+  background-position: center;
 
-.page-title {
+  background-repeat: no-repeat;
 
-  text-align: center;
-
-  margin-bottom: 30px;
-}
-
-.page-title h1 {
-
-  color: #1e3a8a;
-
-  font-size: 42px;
-
-  font-weight: 700;
-
-  margin-bottom: 10px;
-}
-
-.page-title p {
-
-  color: #64748b;
-
-  font-size: 18px;
-}
-
-/* CARDS GRID */
-
-.timings-grid {
-
-  max-width: 1300px;
-
-  margin: 0 auto;
+  background-attachment: fixed;
 
   display: flex;
-
-  gap: 25px;
-
-  align-items: stretch;
 
   justify-content: center;
-}
-
-/* CARD */
-
-.timing-card {
-
-  flex: 1;
-
-  background: white;
-
-  border-radius: 20px;
-
-  padding: 35px;
-
-  text-align: center;
-
-  box-shadow:
-    0 8px 20px rgba(0,0,0,.08);
-
-  transition: .3s;
-
-  min-height: 320px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-}
-
-.timing-card:hover {
-
-  transform: translateY(-5px);
-
-  box-shadow:
-    0 15px 30px rgba(0,0,0,.12);
-}
-
-/* ICON */
-
-.card-icon {
-
-  width: 80px;
-
-  height: 80px;
-
-  border-radius: 50%;
-
-  background: #2563eb;
-
-  display: flex;
 
   align-items: center;
 
-  justify-content: center;
-
-  margin: 0 auto 20px;
+  padding: 40px;
 }
 
-.card-icon i {
+.overlay{
 
-  color: white;
+  width:100%;
 
-  font-size: 34px;
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
 }
 
-/* CONTENT */
+.working-hours-card {
 
-.timing-card h2 {
+  width: 100%;
 
-  color: #1e3a8a;
+  max-width: 1100px;
 
-  font-size: 28px;
+  padding: 60px;
 
-  margin-bottom: 20px;
+  background: rgba(255,255,255,.45);
+
+  backdrop-filter: blur(4px);
+
+  border-radius: 25px;
+
+  box-shadow: 0 20px 45px rgba(0,0,0,.20);
+
+  text-align: center;
 }
 
-.timing-content p {
+.working-hours-card h1{
 
-  font-size: 18px;
+  font-family:"Times New Roman", serif;
 
-  line-height: 1.8;
+  font-size:56px;
 
-  color: #334155;
+  font-weight:700;
 
-  margin-bottom: 15px;
+  color:#111827;
+
+  margin-bottom:45px;
 }
 
-/* NOTICE */
+.section{
 
-.notice-card {
-
-  max-width: 1300px;
-
-  margin: 25px auto 0;
-
-  margin-bottom: 60px;
-
-  background: #dc2626;
-
-  color: white;
-
-  border-radius: 20px;
-
-  padding: 25px;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 20px;
-
-  box-shadow:
-    0 8px 20px rgba(0,0,0,.1);
+  margin-bottom:40px;
 }
 
-.notice-card i {
+.section h2{
 
-  font-size: 45px;
+  font-family:"Times New Roman", serif;
+
+  font-size:36px;
+
+  font-weight:700;
+
+  color:#111827;
+
+  margin-bottom:28px;
 }
 
-.notice-card h3 {
+.time-block{
 
-  margin-bottom: 10px;
-
-  font-size: 24px;
+  margin-bottom:25px;
 }
 
-.notice-card p {
+.time-block h3{
 
-  margin: 0;
+  font-family:"Times New Roman", serif;
 
-  line-height: 1.8;
+  font-size:26px;
+
+  font-weight:700;
+
+  color:#111827;
+
+  margin-bottom:8px;
 }
 
-.notice-card strong {
+.time-block p{
 
-  color: #fde68a;
+  font-family:"Times New Roman", serif;
+
+  font-size:30px;
+
+  color:#111827;
+
+  font-weight:500;
 }
 
-/* MOBILE */
+.note{
 
-@media (max-width: 768px) {
+  margin-top:25px;
 
-  .page-title h1 {
+  font-family:"Times New Roman", serif;
 
-    font-size: 30px;
+  font-size:30px;
+
+  color:#111827;
+
+  line-height:1.7;
+}
+
+.note span{
+
+  font-weight:400;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .working-hours-card{
+
+    padding:30px 20px;
   }
 
-  .page-title p {
+  .working-hours-card h1{
 
-    font-size: 16px;
+    font-size:36px;
   }
 
-  .timings-grid {
+  .section h2{
 
-    flex-direction: column;
+    font-size:26px;
   }
 
-  .timing-card {
+  .time-block h3{
 
-    min-height: auto;
-
-    padding: 25px;
+    font-size:20px;
   }
 
-  .timing-card h2 {
+  .time-block p{
 
-    font-size: 24px;
+    font-size:22px;
   }
 
-  .timing-content p {
+  .note{
 
-    font-size: 16px;
+    font-size:20px;
   }
 
-  .notice-card {
+}
 
-    flex-direction: column;
+app-back-button{
 
-    text-align: center;
-  }
+  position: absolute;
 
-  .notice-card i {
+  top: 25px;
 
-    font-size: 36px;
-  }
+  left: 25px;
 
+  z-index: 1000;
 }

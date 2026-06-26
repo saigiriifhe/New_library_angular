@@ -118,7 +118,7 @@ export class OpenAccessResources {
     },
 
     {
-      title: ' Journals',
+      title: ' eJournals',
       icon: 'bi bi-journal-richtext',
       color: '#16a34a',
 
