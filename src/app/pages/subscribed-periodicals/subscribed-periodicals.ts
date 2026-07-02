@@ -15,6 +15,11 @@ export class SubscribedPeriodicals {
     icon: 'bi bi-briefcase-fill',
     file: 'assets/periodicals/N J yasaswy Memorial Library.pdf'
   },
+  {
+    title: 'Faculty of Social Sciences',
+    icon: 'bi bi-mortarboard-fill',
+    file: 'assets/periodicals/ISE Library.pdf'
+  },
 
   {
     title: 'Faculty of Science & Technology',
@@ -38,12 +43,8 @@ export class SubscribedPeriodicals {
     title: 'IUP Journals',
     icon: 'bi bi-journal-richtext',
     file: 'assets/periodicals/IUP Periodicals.pdf'
-  },
-  {
-    title: 'Faculty of Social Sciences',
-    icon: 'bi bi-mortarboard-fill',
-    file: 'assets/periodicals/ISE Library.pdf'
   }
+  
 
 ];
 }
