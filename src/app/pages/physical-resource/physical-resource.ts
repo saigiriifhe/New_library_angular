@@ -75,7 +75,7 @@ export class PhysicalResource {
     },
 
     {
-      title: 'Thesis',
+      title: 'Ph.D',
       count: '288',
       icon: 'bi bi-file-earmark-medical-fill',
       color: '#7c3aed'
