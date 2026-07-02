@@ -38,6 +38,11 @@ export class SubscribedPeriodicals {
     title: 'IUP Journals',
     icon: 'bi bi-journal-richtext',
     file: 'assets/periodicals/IUP Periodicals.pdf'
+  },
+  {
+    title: 'Faculty of Social Sciences',
+    icon: 'bi bi-mortarboard-fill',
+    file: 'assets/periodicals/ISE Library.pdf'
   }
 
 ];
