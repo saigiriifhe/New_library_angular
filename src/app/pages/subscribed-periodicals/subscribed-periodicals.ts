@@ -18,11 +18,11 @@ export class SubscribedPeriodicals {
   {
     title: 'Faculty of Social Sciences',
     icon: 'bi bi-mortarboard-fill',
-    file: 'assets/periodicals/ISE Library.pdf'
+    file: 'assets/periodicals/Foss.pdf'
   },
 
   {
-    title: 'Faculty of Science & Technology',
+    title: 'Faculty of Sci. & Tech.',
     icon: 'bi bi-cpu-fill',
     file: 'assets/periodicals/FST Library.pdf'
   },
