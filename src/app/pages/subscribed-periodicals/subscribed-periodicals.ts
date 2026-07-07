@@ -13,7 +13,7 @@ export class SubscribedPeriodicals {
   {
     title: 'Faculty of Management',
     icon: 'bi bi-briefcase-fill',
-    file: 'assets/periodicals/N J yasaswy Memorial Library.pdf'
+    file: 'assets/periodicals/mgnt.pdf'
   },
   {
     title: 'Faculty of Social Sciences',
