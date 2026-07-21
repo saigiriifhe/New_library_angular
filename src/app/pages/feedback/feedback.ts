@@ -191,6 +191,7 @@ import { isPlatformBrowser } from '@angular/common';
  import { CommonModule } from '@angular/common';
  import { FormsModule } from '@angular/forms';
  import { BackButton } from '../../shared/back-button/back-button';
+ import { Feedback1 } from '../../models/feedback1.model';
 
 @Component({
   selector: 'app-feedback',
@@ -207,13 +208,21 @@ export class Feedback{
 
   private platformId = inject(PLATFORM_ID);
 
-  userFeedback = {
-    name: '',
-    designation: '',
-    email: '',
-    rating: 5,
-    feedback: ''
-  };
+ 
+
+  userFeedback: Feedback1 = {
+
+  name: '',
+
+  designation: '',
+
+  email: '',
+
+  rating: '⭐⭐⭐⭐⭐ Excellent',
+
+  feedback: ''
+
+};
 
   submitFeedback() {
 
@@ -231,7 +240,7 @@ export class Feedback{
     formData.append('entry.1257615711', this.userFeedback.designation);
     formData.append('entry.1319379012', this.userFeedback.email);
     formData.append('entry.32884969', this.userFeedback.feedback);
-    formData.append('entry.980960598', this.userFeedback.rating.toString());
+    formData.append('entry.980960598', this.userFeedback.rating);
 
     fetch(url, {
       method: 'POST',
@@ -242,13 +251,13 @@ export class Feedback{
 
       alert('Feedback Submitted Successfully.');
 
-      this.userFeedback = {
-        name: '',
-        designation: '',
-        email: '',
-        rating: 5,
-        feedback: ''
-      };
+     this.userFeedback = {
+  name: '',
+  designation: '',
+  email: '',
+  rating: '⭐⭐⭐⭐⭐ Excellent',
+  feedback: ''
+};
 
     })
     .catch(error => {
