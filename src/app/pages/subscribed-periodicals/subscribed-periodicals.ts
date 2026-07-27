@@ -24,19 +24,19 @@ export class SubscribedPeriodicals {
   {
     title: 'Faculty of Sci. & Tech.',
     icon: 'bi bi-cpu-fill',
-    file: 'assets/periodicals/FST Library.pdf'
+    file: 'assets/periodicals/FST.pdf'
   },
 
   {
     title: 'Faculty of Law',
     icon: 'bi bi-bank2',
-    file: 'assets/periodicals/FOL Periodicals list 2026.pdf'
+    file: 'assets/periodicals/FOL.pdf'
   },
 
   {
     title: 'ICFAI School of Architecture',
     icon: 'bi bi-building',
-    file: 'assets/periodicals/ISArch Library.pdf'
+    file: 'assets/periodicals/Arch.pdf'
   },
 
   {
