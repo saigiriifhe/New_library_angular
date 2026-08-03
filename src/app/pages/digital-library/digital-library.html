@@ -33,7 +33,7 @@
         </h2>
 
         <p class="repo-access">
-  {{ resource.subtitle }}
+
 </p>
 
         <p>
@@ -41,6 +41,10 @@
         </p>
 
         <button>
+  {{ resource.buttonText || (resource.route ? 'Access Resources' : 'Access Resource') }}
+</button>
+
+        <!-- <button>
 
           @if(resource.route){
 
@@ -52,7 +56,7 @@
 
           }
 
-        </button>
+        </button> -->
 
       </div>
 

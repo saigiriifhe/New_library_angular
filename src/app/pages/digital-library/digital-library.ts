@@ -32,7 +32,6 @@ export class DigitalLibrary {
 
     {
       title: `IFHE Institutional Repository`,
-        subtitle: '(Within Campus Access Only)',
       description:
       'Browse institutional publications, thesis, dissertations and research archives.',
 
@@ -41,7 +40,9 @@ export class DigitalLibrary {
       color: '#16a34a',
 
       link:
-      'http://172.22.40.6:4000'
+      'http://172.22.40.6:4000',
+
+       buttonText: '🔒 Access Within Campus'
     },
 
     {
