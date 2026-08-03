@@ -31,7 +31,8 @@ export class DigitalLibrary {
     },
 
     {
-      title: 'IFHE Institutional Repository',
+      title: `IFHE Institutional Repository`,
+        subtitle: '(Within Campus Access Only)',
       description:
       'Browse institutional publications, thesis, dissertations and research archives.',
 
