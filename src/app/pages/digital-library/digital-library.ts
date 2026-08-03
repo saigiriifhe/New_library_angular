@@ -42,7 +42,7 @@ export class DigitalLibrary {
       link:
       'http://172.22.40.6:4000',
 
-       buttonText: '🔒 Access Within Campus'
+       buttonText: ' Access Within the Campus'
     },
 
     {
