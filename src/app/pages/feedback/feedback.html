@@ -4,81 +4,118 @@
 
   <div class="feedback-form-container">
 
-    <h2>Share Your Experience</h2>
+    <h2>NJYM Library – Feedback Form</h2>
 
-    <form (ngSubmit)="submitFeedback()" #feedbackForm="ngForm">
+    <form (ngSubmit)="submitFeedback(feedbackForm)" #feedbackForm="ngForm">
 
-      <!-- Name & Designation -->
-      <div class="row">
+      <!-- Membership Category -->
+      <label for="membershipCategory">Please tick mark the membership category <span style="color: red;">*</span></label>
 
-        <div class="col-md-6 mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Full Name"
-            name="name"
-            [(ngModel)]="userFeedback.name"
-            required>
-        </div>
 
-        <div class="col-md-6 mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Designation"
-            name="designation"
-            [(ngModel)]="userFeedback.designation">
-        </div>
-
-      </div>
-
-      <!-- Email -->
-      <div class="mb-3">
-        <input
-          type="email"
-          class="form-control"
-          placeholder="Email Address"
-          name="email"
-          [(ngModel)]="userFeedback.email"
-          required>
-      </div>
-
-      <!-- Rating -->
-      <div class="mb-3">
-        <select
-          class="form-select"
-          name="rating"
-          [(ngModel)]="userFeedback.rating">
-
-        <option value="⭐⭐⭐⭐⭐ Excellent">⭐⭐⭐⭐⭐ Excellent</option>
-
-<option value="⭐⭐⭐⭐ Very Good">⭐⭐⭐⭐ Very Good</option>
-
-<option value="⭐⭐⭐ Good">⭐⭐⭐ Good</option>
-
-<option value="⭐⭐ Fair">⭐⭐ Fair</option>
-
-<option value="⭐ Poor">⭐ Poor</option>
-
+      <div class="col-md-6 mb-3">
+        <select class="form-control" placeholder="Membership Category " name="membershipCategory"
+          [(ngModel)]="userFeedback.membershipCategory" required >
+          <option value="">Select Membership Category </option>
+          <option value="Student">Student</option>
+          <option value="Faculty">Faculty</option>
+          <option value="Staff">Staff</option>
+          <option value="Research Scholar">Research Scholar</option>
         </select>
       </div>
 
-      <!-- Feedback -->
-      <div class="mb-3">
-        <textarea
-          rows="5"
-          class="form-control"
-          placeholder="Write your feedback..."
-          name="feedback"
-          [(ngModel)]="userFeedback.feedback"
+
+      <label for="name">Name <span style="color: red;">*</span></label>
+      <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Full Name" name="name" [(ngModel)]="userFeedback.name"
           required>
-        </textarea>
       </div>
 
+
+      <label for="enrollEmpId">Enroll .No / Emp.ID<span style="color: red;">*</span></label>
+      <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Enrollment/Employee ID" name="enrollEmpId"
+          [(ngModel)]="userFeedback.enrollEmpId" required>
+      </div>
+
+
+      <label for="departmentSchool">Department/School <span style="color: red;">*</span></label>
+      <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Department/School" name="departmentSchool"
+          [(ngModel)]="userFeedback.departmentSchool" required>
+      </div>
+
+
+      <label for="courseBatch">Course/Batch </label>
+      <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Course/Batch" name="courseBatch"
+          [(ngModel)]="userFeedback.courseBatch">
+      </div>
+
+
+      <label for="mobileNumber">Mobile Number <span style="color: red;">*</span></label>
+      <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Mobile Number" name="mobileNumber"
+          [(ngModel)]="userFeedback.mobileNumber" required>
+      </div>
+
+
+      <label for="email">Email ID <span style="color: red;">*</span></label>
+      <div class="col-md-6 mb-3">
+        <input type="text" class="form-control" placeholder="Email ID" name="email"
+          [(ngModel)]="userFeedback.email" required>
+      </div>
+
+
+      <label for="libraryVisit">How often do you visit the library? <span style="color: red;">*</span></label>
+      <div class="col-md-6 mb-3">
+
+        <select class="form-control" placeholder="How often do you visit the library?" name="libraryVisit"
+          [(ngModel)]="userFeedback.libraryVisit" selected required >
+          <option value="">Select</option>
+          <option value="Daily">Daily</option>
+          <option value="Weekly">Weekly</option>
+          <option value="Monthly">Monthly</option>
+          <option value="Rarely">Rarely</option>
+        </select>
+      </div>
+
+
+      <label for="visitPurpose">Primary purpose of visiting the library? <span style="color: red;">*</span></label>
+      <div class="col-md-6 mb-3">
+        <select class="form-control" placeholder="Primary purpose of visiting the library?" name="visitPurpose"
+          [(ngModel)]="userFeedback.visitPurpose" required>
+          <option value="">Select Purpose</option>
+          <option value="Reading Books">Reading Books</option>
+          <option value="Borrowing Books">Borrowing Books</option>
+          <option value="Referring - Journals / Magazines / Newspapers">Referring - Journals / Magazines / Newspapers</option>
+          <option value="Research Purpose">Research Purpose</option>
+          <option value="All the above">All the above</option>
+        </select>
+      </div>
+
+
+      <label for="satisfaction">Are you satisfied with the library services? <span style="color: red;">*</span></label>
+      <div class="col-md-6 mb-3">
+        <select class="form-control" placeholder="Satisfaction Level" name="satisfaction"
+          [(ngModel)]="userFeedback.satisfaction" required>
+          <option value="">Select Satisfaction Level</option>
+          <option value="Highly  Satisfied">Highly  Satisfied</option>
+          <option value="Satisfied">Satisfied</option>
+          <option value="Not Satisfied">Not Satisfied</option>
+    
+        </select>
+      </div>
+
+
+      <label for="suggestions">Suggestions, if any </label>
+      <div class=" mb-3">
+        <textarea rows="5" class="form-control" placeholder="" name="suggestions"
+          [(ngModel)]="userFeedback.suggestions" rows="4"></textarea>
+      </div>
+
+  
       <!-- Submit -->
-      <button
-        type="submit"
-        class="btn btn-primary w-100">
+      <button type="submit" class="btn btn-primary w-100">
 
         <i class="bi bi-send-fill"></i>
         Submit Feedback
@@ -90,5 +127,3 @@
   </div>
 
 </div>
-
-

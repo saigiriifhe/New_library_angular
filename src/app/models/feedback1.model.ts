@@ -1,13 +1,25 @@
 export interface Feedback1 {
 
-  name: string;
+  // name: string;
 
-  designation: string;
+  // designation: string;
 
-  email: string;
+  // email: string;
 
-  rating: string;
+  // rating: string;
 
-  feedback: string;
+  // feedback: string;
+
+  membershipCategory: string,
+  name: string,
+  enrollEmpId: string,
+  departmentSchool: string,
+  courseBatch: string,
+  mobileNumber: string,
+  email: string,
+  libraryVisit: string,
+  visitPurpose: string,
+  satisfaction: string,
+  suggestions: string
 
 }

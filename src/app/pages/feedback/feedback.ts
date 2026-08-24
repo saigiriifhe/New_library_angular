@@ -1,190 +1,3 @@
-// // import { Component } from '@angular/core';
-// // import { CommonModule } from '@angular/common';
-// // import { FormsModule } from '@angular/forms';
-// // import { BackButton } from '../../shared/back-button/back-button';
-
-// // @Component({
-// //   selector: 'app-feedback',
-// //   standalone: true,
-// //   imports: [
-// //     CommonModule,
-// //     FormsModule,BackButton
-// //   ],
-// //   templateUrl: './feedback.html',
-// //   styleUrl: './feedback.scss'
-// // })
-// // export class Feedback {
-
-// //   feedbacks = [
-
-// //     {
-// //       name: 'Dr. K. Ramesh',
-// //       designation: 'Professor',
-// //       rating: 5,
-// //       feedback:
-// //       'The library provides excellent academic resources and research support.'
-// //     },
-
-// //     {
-// //       name: 'Priya Sharma',
-// //       designation: 'MBA Student',
-// //       rating: 5,
-// //       feedback:
-// //       'The digital library resources are very useful for assignments and projects.'
-// //     },
-
-// //     {
-// //       name: 'Sneha Reddy',
-// //       designation: 'Research Scholar',
-// //       rating: 5,
-// //       feedback:
-// //       'Excellent access to journals, Scopus and research databases.'
-// //     }
-
-// //   ];
-
-// //   userFeedback = {
-
-// //     name: '',
-// //     designation: '',
-// //     email: '',
-// //     rating: 5,
-// //     feedback: ''
-
-// //   };
-
-// //   submitFeedback() {
-
-// //     console.log(this.userFeedback);
-
-// //     alert('Thank you for your feedback!');
-
-// //     this.userFeedback = {
-// //       name: '',
-// //       designation: '',
-// //       email: '',
-// //       rating: 5,
-// //       feedback: ''
-// //     };
-
-// //   }
-
-// // }
-
-
-// import { Component } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-// import { FormsModule } from '@angular/forms';
-// import { BackButton } from '../../shared/back-button/back-button';
-
-// @Component({
-//   selector: 'app-feedback',
-//   standalone: true,
-//   imports: [
-//     CommonModule,
-//     FormsModule,
-//     BackButton
-//   ],
-//   templateUrl: './feedback.html',
-//   styleUrl: './feedback.scss'
-// })
-// export class Feedback {
-
-//   userFeedback = {
-//     name: '',
-//     designation: '',
-//     email: '',
-//     rating: 5,
-//     feedback: ''
-//   };
-
-//   submitFeedback() {
-
-//   const url =
-//     'https://docs.google.com/forms/d/e/1FAIpQLSfxa-WuVuy3v_RZgvufp-VUnXKFByNu76QxRNpMG23n473GkA/formResponse';
-
-//   const formData = new FormData();
-
-//   formData.append('entry.134724461', this.userFeedback.name);
-//   formData.append('entry.1257615711', this.userFeedback.designation);
-//   formData.append('entry.1319379012', this.userFeedback.email);
-//   formData.append('entry.32884969', this.userFeedback.feedback);
-//   formData.append('entry.980960598', this.userFeedback.rating.toString());
-
-//   fetch(url, {
-//     method: 'POST',
-//     mode: 'no-cors',
-//     body: formData
-//   })
-//   .then(() => {
-//     alert('Feedback Submitted Successfully');
-
-//     this.userFeedback = {
-//       name: '',
-//       designation: '',
-//       email: '',
-//       rating: 5,
-//       feedback: ''
-//     };
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
-
-// }
-
-//   // submitFeedback() {
-
-//   //   const formURL =
-//   //     'https://docs.google.com/forms/d/e/1FAIpQLSfxa-WuVuy3v_RZgvufp-VUnXKFByNu76QxRNpMG23n473GkA/formResponse';
-
-//   //   const formData = new FormData();
-
-//   //   formData.append(
-//   //     'entry.134724461',
-//   //     this.userFeedback.name
-//   //   );
-
-//   //   formData.append(
-//   //     'entry.1257615711',
-//   //     this.userFeedback.designation
-//   //   );
-
-//   //   formData.append(
-//   //     'entry.1319379012',
-//   //     this.userFeedback.email
-//   //   );
-
-//   //   formData.append(
-//   //     'entry.980960598',
-//   //     this.userFeedback.rating.toString()
-//   //   );
-
-//   //   formData.append(
-//   //     'entry.32884969',
-//   //     this.userFeedback.feedback
-//   //   );
-
-//   //   fetch(formURL, {
-//   //     method: 'POST',
-//   //     mode: 'no-cors',
-//   //     body: formData
-//   //   });
-
-//   //   alert('✅ ✔ Feedback Submitted Successfully');
-
-//   //   this.userFeedback = {
-//   //     name: '',
-//   //     designation: '',
-//   //     email: '',
-//   //     rating: 5,
-//   //     feedback: ''
-//   //   };
-
-//   // }
-
-// }
-
 
 import { Component, inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
@@ -192,6 +5,7 @@ import { isPlatformBrowser } from '@angular/common';
  import { FormsModule } from '@angular/forms';
  import { BackButton } from '../../shared/back-button/back-button';
  import { Feedback1 } from '../../models/feedback1.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-feedback',
@@ -208,23 +22,23 @@ export class Feedback{
 
   private platformId = inject(PLATFORM_ID);
 
- 
-
   userFeedback: Feedback1 = {
 
+  membershipCategory: '',
   name: '',
-
-  designation: '',
-
+  enrollEmpId: '',
+  departmentSchool: '',
+  courseBatch: '',
+  mobileNumber: '',
   email: '',
-
-  rating: '⭐⭐⭐⭐⭐ Excellent',
-
-  feedback: ''
+  libraryVisit: '',
+  visitPurpose: '',
+  satisfaction: '',
+  suggestions: ''
 
 };
 
-  submitFeedback() {
+  submitFeedback(form: NgForm) {
 
     // Prevent SSR execution
     if (!isPlatformBrowser(this.platformId)) {
@@ -232,15 +46,21 @@ export class Feedback{
     }
 
     const url =
-      'https://docs.google.com/forms/d/e/1FAIpQLSfxa-WuVuy3v_RZgvufp-VUnXKFByNu76QxRNpMG23n473GkA/formResponse';
+      'https://docs.google.com/forms/d/e/1FAIpQLSdGLl7Aj9yoE-qIu-ZHbJq_eHQBviHrbgDLCN_7ZkKDoE8iYA/formResponse';
 
     const formData = new FormData();
 
-    formData.append('entry.134724461', this.userFeedback.name);
-    formData.append('entry.1257615711', this.userFeedback.designation);
-    formData.append('entry.1319379012', this.userFeedback.email);
-    formData.append('entry.32884969', this.userFeedback.feedback);
-    formData.append('entry.980960598', this.userFeedback.rating);
+    formData.append('entry.2052431593', this.userFeedback.membershipCategory);
+    formData.append('entry.6350424', this.userFeedback.name);
+    formData.append('entry.522703975', this.userFeedback.enrollEmpId.toString());
+    formData.append('entry.288029031', this.userFeedback.departmentSchool);
+    formData.append('entry.1153675783', this.userFeedback.courseBatch);
+    formData.append('entry.82668673', this.userFeedback.mobileNumber.toString());
+    formData.append('entry.563010020', this.userFeedback.email);
+    formData.append('entry.1541527899', this.userFeedback.libraryVisit);
+    formData.append('entry.119263117', this.userFeedback.visitPurpose);
+    formData.append('entry.1952734763', this.userFeedback.satisfaction);
+    formData.append('entry.1104367451', this.userFeedback.suggestions);
 
     fetch(url, {
       method: 'POST',
@@ -248,15 +68,23 @@ export class Feedback{
       body: formData
     })
     .then(() => {
-
+      console.log(this.userFeedback);
       alert('Feedback Submitted Successfully.');
-
+       // Reset the Angular form
+  form.resetForm();
+      
      this.userFeedback = {
+ membershipCategory: '',
   name: '',
-  designation: '',
+  enrollEmpId: '',
+  departmentSchool: '',
+  courseBatch: '',
+  mobileNumber: '',
   email: '',
-  rating: '⭐⭐⭐⭐⭐ Excellent',
-  feedback: ''
+  libraryVisit: '',
+  visitPurpose: '',
+  satisfaction: '',
+  suggestions: ''
 };
 
     })
